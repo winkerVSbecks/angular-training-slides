@@ -4,11 +4,11 @@
 
 # Unused Material
 
----
++++
 
 ## Everything after this point has *NOT* been edited
 
----
++++
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
 ## Quiz
@@ -55,7 +55,7 @@ Correct answer is 1.
 denotes an attribute named `header` rather than an element selector of
 `header`.
 
----
++++
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
 ## Quiz
@@ -108,7 +108,7 @@ Correct answer is 3.
 render projected content into that last `<ng-content>` block ignoring
 the others.
 
----
++++
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
 ## Quiz
@@ -151,7 +151,7 @@ Correct answer is 3.
 1, 2: `select` will only do a shallow selector match. Children of
 other elements do not get selected.
 
----
++++
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
 ## Quiz
@@ -192,7 +192,7 @@ Correct answer is 2.
 `<ng-content>` will act as a catch-all and will projection any content
 not captured by other selectors. It does not blindly select everything
 
----
++++
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
 ## Quiz
@@ -235,7 +235,7 @@ case. Both spans will be rendered.
 
 4: `select` will greedily match as many elements as it can.
 
----
++++
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
 ## Quiz
@@ -276,7 +276,7 @@ output you should achieve the expected behavior.
 3: This may expose confusion between the relationship of the property
 names and that suffixing an output member name with `Change`.
 
----
++++
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
 ## Quiz
@@ -304,7 +304,7 @@ between `time` and `timeChange`.
 
 3: Input/output syntax is not well understood.
 
----
++++
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
 ## Quiz
@@ -334,7 +334,7 @@ work.
 4: This may expose confusion or a lack of understanding what the the
 `$event` variable represents.
 
----
++++
 
 ## Component Lifecycle
 
@@ -349,7 +349,7 @@ These are the most-used lifecycle hooks:
 
 **Pro Tip:** Prefer putting initialization logic in `ngOnInit` instead of `constructor`
 
----
++++
 
 ## Pure vs Impure Pipes
 
@@ -378,7 +378,7 @@ Notes:
 - Simple types like `string`, `number` and `boolean` are immutable by default
 - Mutating an `object` or an `array` does not change the reference
 
----
++++
 
 ## The Async Pipe
 
@@ -403,7 +403,7 @@ export class AppComponent {
 
 [View Example](https://plnkr.co/edit/rpUAzH8sPK5c1NEJtAVl?p=preview)
 
----
++++
 
 ## Two-Way Data Binding
 
@@ -432,7 +432,7 @@ Which is equivalent to:
 <input [ngModel]="name" (ngModelChange)="name=$event" />
 ```
 
----
++++
 
 ## Two-Way Data Binding Example
 
@@ -461,7 +461,7 @@ class AppComponent { myNumber = 0 }
 
 [View Example](http://plnkr.co/edit/nJZQYSV23sCcbb37FzLN?p=preview)
 
----
++++
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
 ## Quiz
@@ -483,7 +483,7 @@ Selecting ALL of them is correct.
 If the student picks either 3 or 4, it could be that the student forgot that
 the "banana in a box" syntax `[()]` is in fact combination of `[]` and `()`
 
----
++++
 
 ## Creating a Template Variable from a Directive
 
@@ -507,7 +507,7 @@ export class AppComponent {
     this.values = form.value;
   }
 }
-```    
+```
 
 [View Example](https://plnkr.co/edit/ttVaCf?p=preview)
 
@@ -516,7 +516,7 @@ Notes:
 - The value of the property `exportedAs` of the directive `NgForm` is `ngForm`
 - The enhanced component instance has validation, the native `form` component doesn't
 
----
++++
 
 ## Template Projection
 
@@ -545,7 +545,7 @@ class ChildComponent {}
 
 [View Example](http://plnkr.co/edit/oqkyldgOxykReRsffVxZ?p=preview)
 
----
++++
 
 ## Defining Multiple Projection Areas
 
@@ -569,7 +569,7 @@ class ChildComponent {}
 
 [View Example](https://plnkr.co/edit/kwD3iKLU8mELAoHj2fBv?p=preview)
 
----
++++
 
 ## Multiple Projections with Class Selectors
 
@@ -598,7 +598,7 @@ class ChildComponent {}
 
 [View Example](https://plnkr.co/edit/YQTUGbOxhxZ41iKKpTbV?p=preview)
 
----
++++
 
 ## Smart vs Dumb Components
 
@@ -614,7 +614,7 @@ Components can be classified as "smart" or "dumb" depending on how coupled are t
 | Easy to test?           | No                   | Yes                     |
 | A.K.A                   | Container Components | Presentation Components |
 
----
++++
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
 ## Quiz
@@ -634,7 +634,7 @@ which field of the `@NgModule` decorator should I put the class in?
 
 Correct answer is "declarations".
 
----
++++
 
 ## Refactoring Hard-to-Test Code (1/3)
 
@@ -644,7 +644,7 @@ Some code is hard to test, and that usually means it's a good opportunity to ref
 - Minimize reliance on private component methods
 - Move dependencies into services so they can be mocked
 
----
++++
 
 ## Refactoring Hard-to-Test Code (2/3)
 
@@ -668,7 +668,7 @@ export class QuoteComponent implements OnInit {
 
 Moving our API call into a service will allow us to mock `getQuote()` and avoid having to mock `Http`
 
----
++++
 
 ## Refactoring Hard-to-Test Code (3/3)
 
@@ -698,7 +698,7 @@ export class QuoteComponent implements OnInit {
 }
 ```
 
----
++++
 
 ## Configuring TypeScript Compilation
 

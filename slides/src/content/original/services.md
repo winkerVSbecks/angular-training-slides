@@ -1,7 +1,7 @@
 <!-- .slide: data-background="../content/images/title-slide.jpg" -->
 # Services
 
----
++++
 
 ## What is a Service?
 
@@ -24,7 +24,7 @@ export class MyService { /* ... */ }
 export class AppModule {}
 ```
 
----
++++
 
 ## Consuming a Service
 
@@ -46,7 +46,7 @@ export class OtherService {
 
 - Services are provided as singletons by the Dependency Injection (DI) system
 
----
++++
 
 ## When to Use a Service
 
@@ -73,7 +73,7 @@ export class LocalStorageService {
 - To handle the application state
 - To define business logic
 
----
++++
 
 ## The Built-in `Http` Service
 
@@ -96,7 +96,7 @@ export class PostService {
 - Every method returns an observable that emit a single value
 - Connections are closed automatically after the value is emitted
 
----
++++
 
 ## Importing the `HttpModule`
 
@@ -117,7 +117,7 @@ export class AppModule {}
 
 [View Example](https://plnkr.co/edit/l4n2upSueYw5UbFjZB1C?p=preview)
 
----
++++
 
 ## Handling `http` rejections
 
@@ -133,7 +133,7 @@ To catch rejections we can use the `subscribe` operator's `onError` callback
     );
 ```
 
----
++++
 
 ## Using the `.catch` operator
 
@@ -155,7 +155,7 @@ To catch rejections we can use the `subscribe` operator's `onError` callback
   });
 ```
 
----
++++
 
 ## Cancel a Request
 
@@ -175,7 +175,7 @@ To catch rejections we can use the `subscribe` operator's `onError` callback
 ```
 [View Example](http://plnkr.co/edit/MByeTy?p=preview)
 
----
++++
 
 ## Cancel a Request with `takeUntil`
 
@@ -199,7 +199,7 @@ search() {
 
 [View Example](https://plnkr.co/edit/v2aGkTCmi34jBr7an1i8?p=preview)
 
----
++++
 
 ## Retry a request
 
@@ -220,7 +220,7 @@ search() {
 
 [View Example](http://plnkr.co/edit/zSAWwV?p=preview)
 
----
++++
 
 ## Converting requests into promises
 

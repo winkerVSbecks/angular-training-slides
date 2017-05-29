@@ -5,7 +5,7 @@
 
 # Directives
 
----
++++
 <!-- .slide: id="directives-what-are-directives" -->
 ## What are directives?
 
@@ -18,7 +18,7 @@ There are two types of directives:
 - **Attribute directives:** Changes behavior without modifying the template (`NgClass`, `NgStyle`)
 - **Structural directives:** Changes behavior by modifying the template (`NgIf`, `NgFor`)
 
----
++++
 <!-- .slide: id="directives-ngstyle-1" -->
 ## `NgStyle` Directive (1/2)
 
@@ -45,7 +45,7 @@ export class StyleExampleComponent {
 
 [View Example](https://plnkr.co/edit/raYS8ou6AZru8UDc6hJs?p=preview)
 
----
++++
 <!-- .slide: id="directives-ngstyle-2" -->
 ## `NgStyle` Directive (2/2)
 
@@ -75,7 +75,7 @@ The final style it's going to be a combination of the `style` attribute and `[ng
 
 ```
 
----
++++
 <!-- .slide: id="directives-ngclass-1" -->
 ## `NgClass` Directive (1/4)
 
@@ -97,7 +97,7 @@ Resulting class attribute:
 <p class="orange centered-text underlined"></p>
 ```
 
----
++++
 <!-- .slide: id="directives-ngclass-2" -->
 ## `NgClass` Directive (2/4) - String
 
@@ -125,7 +125,7 @@ export class ClassAsStringComponent {
 
 [View Example](https://plnkr.co/edit/uYihwapmBxNaqGDeawwS?p=preview)
 
----
++++
 <!-- .slide: id="directives-ngclass-3" -->
 ## `NgClass` Directive (3/4) - Array
 
@@ -153,7 +153,7 @@ export class ClassAsStringComponent {
 
 [View Example](https://plnkr.co/edit/uYihwapmBxNaqGDeawwS?p=preview)
 
----
++++
 <!-- .slide: id="directives-ngclass-4" -->
 ## `NgClass` Directive (4/4) - Object
 
@@ -181,7 +181,7 @@ Result:
 
 [View Example](https://plnkr.co/edit/0xrwGT?p=preview)
 
----
++++
 <!-- .slide: id="directives-structural-directives" -->
 ## Structural Directives
 
@@ -191,7 +191,7 @@ Result:
   - `ngIf` and `ngFor`: seen before
   - `ngSwitch` discussed below
 
----
++++
 <!-- .slide: id="directives-ngswitch" -->
 ## `NgSwitch` Directive
 
@@ -221,7 +221,7 @@ export class AppComponent {
 
 [View Example](https://plnkr.co/edit/MEG6RBlrF82kWNYxwFlk?p=preview)
 
----
++++
 <!-- .slide: id="directives-multiple-structural-directives" -->
 ## Using Multiple Structural Directives
 

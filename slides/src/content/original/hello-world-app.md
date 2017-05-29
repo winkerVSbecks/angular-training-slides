@@ -1,7 +1,7 @@
 <!-- .slide: data-background="../content/images/title-slide.jpg" -->
 # Creating a Hello World Application
 
----
++++
 
 ## Example Structure of an Angular App
 
@@ -16,7 +16,7 @@ Notes:
 - A module defines a collection of Components, Directives, Pipes and Services
 - There's different types of modules: root, feature, built-in and third party modules.
 
----
++++
 
 ## Angular Modules
 
@@ -30,7 +30,7 @@ Notes:
 - An Angular application is a collection of modules, starting from the root module
 - Modules can import other modules to extend functionality
 
----
++++
 
 ## Structure of a Module
 
@@ -53,7 +53,7 @@ export class MyModule {}
 - `exports`: Components, directives or pipes available for other modules
 - `bootstrap`: The root component of the application
 
----
++++
 
 ## Structure of a Root Module
 
@@ -74,7 +74,7 @@ export class AppModule {}
 - The root module always imports the `BrowserModule`
 - The `BrowserModule` exports common elements of the framework (`NgIf`, `NgFor`, etc.)
 
----
++++
 
 ## Quiz
 
@@ -98,7 +98,7 @@ module strong enough
 
 </aside>
 
----
++++
 
 ## Structure of a Feature Module
 
@@ -118,7 +118,7 @@ export class MyFeatureModule {}
 - Services are public by default
 - Beware of how the dependency injection works!
 
----
++++
 
 ## Quiz
 
@@ -147,7 +147,7 @@ confused between Module's elements (private by default) and and Services
 
 </aside>
 
----
++++
 
 ## Root Module Example
 
@@ -171,7 +171,7 @@ export class AppModule {}
   - `AppModule` => _app.module.ts_
   - `SharedModule` => _shared.module.ts_
 
----
++++
 
 ## Basic Structure of a Component
 
@@ -199,7 +199,7 @@ export class WidgetComponent { ... }
 
 [View Example](https://plnkr.co/edit/oQt4n7r6droc2aczAFbO?p=preview)
 
----
++++
 
 ## Comments on Components
 
@@ -228,7 +228,7 @@ styles: [`
 `]
 ```
 
----
++++
 
 ## A Simple Angular Folder Structure
 
@@ -252,7 +252,7 @@ styles: [`
 - Always create one folder per module
 - Create import barrels with files called _index.ts_
 
----
++++
 
 ## Folder Structure (With Config Files)
 
@@ -272,7 +272,7 @@ styles: [`
   - Webpack => _webpack.config.json_
   - Typescript => _tsconfig.json_
 
----
++++
 
 ## Bootstrapping an Application
 
@@ -296,7 +296,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
   - Ahead of time compilation (AOT)
 - Calling `enableProdMode` modifies how the change detection works
 
----
++++
 
 ## JIT vs AOT
 
@@ -311,7 +311,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 - AoT compiles component templates in the server
 - With AoT the compiler is not shipped to the browser
 
----
++++
 
 ## Loading an App Using Webpack
 
@@ -328,7 +328,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 </html>
 ```
 
----
++++
 
 ## Multiple Ways to Define a Component
 
@@ -354,7 +354,7 @@ External files style:
 
 [View Example](https://plnkr.co/edit/s1jcJH9YuODcMEDWPLYU?p=preview)
 
----
++++
 
 ## Components With External Files
 
@@ -373,7 +373,7 @@ src
 └── main.ts
 ```
 
----
++++
 
 ## Component Tree (Code)
 
@@ -404,13 +404,13 @@ src
 })
 ```
 
----
++++
 
 ## Component Tree (Diagram)
 
 ![Component Tree](content/images/component-tree.jpg)
 
----
++++
 
 ## Quiz
 
@@ -437,7 +437,7 @@ React components and JSX).
 
 </aside>
 
----
++++
 
 ## Registering Components in the Module
 

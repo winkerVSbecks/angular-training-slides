@@ -4,7 +4,7 @@
 
 # Augury
 
----
++++
 <!-- .slide: id="augury-what-is-augury" -->
 ## What is Augury?
 
@@ -13,7 +13,7 @@
 
 <img src="content/images/augury.svg" width="200" style="box-shadow: none" alt="Augury Logo"/>
 
----
++++
 <!-- .slide: id="augury-installing" -->
 ## Installing Augury
 
@@ -22,7 +22,7 @@
 
 ![Augury in DevTools](content/images/chrome-devtools-augury.png)
 
----
++++
 <!-- .slide: id="augury-integrating" -->
 ## Integrating With Your Application
 
@@ -34,7 +34,7 @@
 - Component properties' values are displayed and editable
 - Custom events can be triggered using arbitrary values
 
----
++++
 <!-- .slide: id="augury-inspecting" -->
 ## Basic Inspection with Augury
 

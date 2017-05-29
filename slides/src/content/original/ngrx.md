@@ -1,28 +1,28 @@
 # Redux (@ngrx)
 
----
++++
 
-## Motivation 
+## Motivation
 
-1. Create [Single Source of Truth](https://en.wikipedia.org/wiki/Single_source_of_truth) 
+1. Create [Single Source of Truth](https://en.wikipedia.org/wiki/Single_source_of_truth)
 1. [Separation of Concern](https://en.wikipedia.org/wiki/Separation_of_concerns) : Separation of Data and Logic
 1. Improve scalability by having things _react_ to events as opposed to caller dictating actions
 1. Reduce Complexity of Mental Map by promoting separation of responsibility between components
 1. Create a coherent framework so future developers will know how to add features by following convention
 1. [Uni-Directional Data Flow](http://redux.js.org/docs/basics/DataFlow.html) : Easy to reason about the interractions between actors
 
----
++++
 
 ## Structure of Systems - Redux vs Server Architecture
 
 | Function | Angular With `@ngrx`  | Server |
 |---|---|---|
-| Data Storage | Store  |  Database  | 
+| Data Storage | Store  |  Database  |
 | Presentation View |  `@Component`  | Client API  |
 | Logic to massage data for Storage |  `@Effects`  | Services |
-| Communication | Action / Observables  | Function Invocation | 
+| Communication | Action / Observables  | Function Invocation |
 
----
++++
 
 ## Store
 
@@ -32,9 +32,9 @@
 1. Can only be affected by actions
 1. Prevent unintentional modifications by other methods via Object Reference, or Directly Accessing Store Members
 
----
++++
 
-## Sample Store 
+## Sample Store
 
 ```ts
 //Root module
@@ -59,7 +59,7 @@ export const people = (state = [], action) => {
 }
 ```
 
----
++++
 
 ## The ngrx/effects Library
 
@@ -68,7 +68,7 @@ export const people = (state = [], action) => {
 1. Listens on the Action Stream and adheres to 'Action In Action Out'
 1. Typical use is take user input, make http call, and provide output to go into store
 
----
++++
 
 ## Handling Side Effects with `@Effect`
 
@@ -91,7 +91,7 @@ export class CollectionEffects {
 }
 ```
 
----
++++
 
 ## `@Component`
 
@@ -104,7 +104,7 @@ export class CollectionEffects {
     1. `personOne` reacts by => `startWalking()`
     1. `personTwo` reacts by => `callTaxi()`
 
----
++++
 
 ## Component Code
 
@@ -131,7 +131,7 @@ export class PersonInputComponent {
 }
 ```
 
----
++++
 
 ## Actions
 
@@ -140,7 +140,7 @@ export class PersonInputComponent {
 1. Use actions instead of function Invocation
 1. Listeners are responsible to determine how to react to actions
 
----
++++
 
 ## Refactor Create Action Into Common Code
 
@@ -163,8 +163,8 @@ function getCredentials(){
 }
 ```
 
----
++++
 
-## Redux as a System 
+## Redux as a System
 
 <img src="content/images/redux-and-data-flow.png" width="50%"/>

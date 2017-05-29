@@ -1,7 +1,7 @@
 <!-- .slide: data-background="../content/images/title-slide.jpg" -->
 # Unit Testing
 
----
++++
 
 ## The Testing Toolchain
 
@@ -12,7 +12,7 @@ Our testing toolchain will consist of the following tools:
 - PhantomJS - a headless DOM instance
 - Istanbul - generates coverage reports
 
----
++++
 
 ## Filename Conventions
 
@@ -31,7 +31,7 @@ We will put our test scripts alongside the files they are testing, adding `.spec
 
 You can put test scripts anywhere you like, but keeping them close to your source files makes them easier to find.
 
----
++++
 
 ## Typings
 
@@ -41,7 +41,7 @@ In order to use write tests in TypeScript, we need TypeScript type definitions f
 npm install @types/jasmine @types/assertion-error
 ```
 
----
++++
 
 ## Executing Test Scripts
 
@@ -65,7 +65,7 @@ A good practice is to amalgamate all the project's task/build commands through n
 ...
 ```
 
----
++++
 
 ## Testing Components
 
@@ -73,7 +73,7 @@ A good practice is to amalgamate all the project's task/build commands through n
 - Angular Testing Utilities provide functions that let you control your testing environment, e.g. `TestBed`
 - `karma` is used to run the unit tests
 
----
++++
 
 ## Simple Test
 
@@ -91,14 +91,14 @@ describe('Testing math', () => {
 - `toEqual` asserts the expecting outcome
 - Always write tests to PASS assertions
 
----
++++
 
 ## Verifying Methods and Properties (1/3)
 
 - Test component methods by calling them in a test, then checking for expected outcome
 - Test properties with assertion statements
 
----
++++
 
 ## Verifying Methods and Properties (2/3)
 
@@ -116,7 +116,7 @@ export class MessageComponent {
 }
 ```
 
----
++++
 
 ## Verifying Methods and Properties (3/3)
 
@@ -137,7 +137,7 @@ describe('Testing message state in message.component', () => {
 
 [View Example](http://plnkr.co/edit/XUM8Gfz08nfbQf1BhDN1?p=preview)
 
----
++++
 
 ## Injecting Dependencies and DOM Changes (1/5)
 
@@ -147,7 +147,7 @@ We can use Angular2's `TestBed` utility to provide mock dependencies before each
 
 We can then create a `fixture` to use in our tests, which will let us query the DOM rendered by a component.
 
----
++++
 
 ## Injecting Dependencies and DOM Changes (2/5)
 
@@ -167,7 +167,7 @@ export class AppComponent {
 }
 ```
 
----
++++
 
 ## Injecting Dependencies and DOM Changes (3/5)
 
@@ -185,7 +185,7 @@ This is what a normal module might look like:
 export class QuoteModule {}
 ```
 
----
++++
 
 ## Injecting Dependencies and DOM Changes (4/5)
 
@@ -209,7 +209,7 @@ beforeEach(() => {
 });
 ```
 
----
++++
 
 ## Injecting Dependencies and DOM Changes (5/5)
 
@@ -230,7 +230,7 @@ it('Should render the mocked response in its template', async(() => {
 }));
 ```
 
----
++++
 
 ## Injecting Dependencies and DOM Changes Summary
 
@@ -242,7 +242,7 @@ it('Should render the mocked response in its template', async(() => {
 
 [View Example](https://plnkr.co/edit/TrwmTD1Y3NTq3PZGFHx6?p=preview)
 
----
++++
 
 ## Overriding Dependencies for Testing (1/3)
 
@@ -253,7 +253,7 @@ it('Should render the mocked response in its template', async(() => {
 - `overrideDirective`
 - `overridePipe`
 
----
++++
 
 ## Overriding Dependencies for Testing (2/3)
 
@@ -279,7 +279,7 @@ export class MessageComponent {
 }
 ```
 
----
++++
 
 ## Overriding Dependencies for Testing (3/3)
 
@@ -304,7 +304,7 @@ beforeEach(() => {
 
 [View Example](http://plnkr.co/edit/P4tkaUYBFcHGvoTZjKnB?p=preview)
 
----
++++
 
 ## Testing Asynchronous Actions (1/2)
 
@@ -327,7 +327,7 @@ export class QuoteComponent {
 }
 ```
 
----
++++
 
 ## Testing Asynchronous Actions (2/2)
 
@@ -343,7 +343,7 @@ it('Should get quote', fakeAsync(() => {
 
 [View Example](http://plnkr.co/edit/W7zHfjFvEGYW0BBNdQlU?p=preview)
 
----
++++
 
 ## Refactoring Hard-to-Test Code (1/3)
 
@@ -353,7 +353,7 @@ Some code is hard to test, and that usually means it's a good opportunity to ref
 - Minimize reliance on private component methods
 - Move dependencies into services so they can be mocked
 
----
++++
 
 ## Refactoring Hard-to-Test Code (2/3)
 
@@ -377,7 +377,7 @@ export class QuoteComponent implements OnInit {
 
 Moving our API call into a service will allow us to mock `getQuote()` and avoid having to mock `Http`
 
----
++++
 
 ## Refactoring Hard-to-Test Code (3/3)
 
@@ -407,14 +407,14 @@ export class QuoteComponent implements OnInit {
 }
 ```
 
----
++++
 
 ## Testing Services
 
 - When testing services in Angular, we employ many of the same techniques and strategies used for testing components.
 - Data is the main emphasis in testing services - are we _getting_, _storing_ and _propagating_ data correctly.
 
----
++++
 
 ## Testing Strategy for Services
 
@@ -427,7 +427,7 @@ Why? If we test a service that actually sends HTTP requests to a real server:
 
 Note that for the mocking services, we usually need to manually inject their dependencies through `TestBed`, because they are usually outside Angular's own bootstrap process.
 
----
++++
 
 ## Testing HTTP Requests
 
@@ -451,7 +451,7 @@ export class SearchWiki {
 }
 ```
 
----
++++
 
 ## Defining a Mock Response
 
@@ -475,7 +475,7 @@ const mockResponse = {
 
 So, how to properly mock this process?
 
----
++++
 
 ## HTTP Mocking Strategy (1/2)
 
@@ -499,7 +499,7 @@ We then create a spy for its get method and return an observable similar to what
 });
 ```
 
----
++++
 
 ## HTTP Mocking Strategy (2/2)
 

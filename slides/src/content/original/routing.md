@@ -1,6 +1,6 @@
 # Routing
 
----
++++
 
 ## Why Routing?
 
@@ -17,7 +17,7 @@ Note:
 
 - Routing is optional, we can build an application that never changes the URL.
 
----
++++
 
 ## Configuring Routes (1/3) - Base URL Tag
 
@@ -33,7 +33,7 @@ Notes:
 
 In the demos we use a script tag to set the base tag. In a real application it must be set as above.
 
----
++++
 
 ## Configuring Routes (2/3) - Route Definition Object
 
@@ -59,7 +59,7 @@ Notes:
 - Each route can have either component or redirect attribute defined in the route.
 - redirectTo and children properties are covered later in this chapter.
 
----
++++
 
 ## Configuring Routes (3/3) - RouterModule
 
@@ -82,7 +82,7 @@ export class AppModule {}
 platformBrowserDynamic().bootstrapModule(AppModule);
 ```
 
----
++++
 
 ## Redirecting the Router to Another Route
 
@@ -101,7 +101,7 @@ This tells the router to redirect to component-one when matching the empty path 
 
 When starting the application, it will automatically navigate to the route for `component-one`.
 
----
++++
 
 ## Defining Links Between Routes
 
@@ -119,7 +119,7 @@ Alternatively, you can navigate to a route by calling the `navigate` function on
 this.router.navigate(['/component-one']);
 ```
 
----
++++
 
 ## Dynamically Adding Route Components
 
@@ -143,7 +143,7 @@ export class AppComponent {}
 
 [View Example](https://plnkr.co/edit/3EH52DtjS1Z5fUbycMX9?p=preview)
 
----
++++
 
 ## Route Parameters (1/2)
 
@@ -164,7 +164,7 @@ export const routes: Routes = [
 </a>
 ```
 
----
++++
 
 ## Route Parameters (2/2)
 
@@ -191,7 +191,7 @@ Notes:
 
 The reason that the `params` property on `ActivatedRoute` is an Observable is that the router may not recreate the component when navigating to the same component. In this case the parameter may change without the component being recreated.
 
----
++++
 
 ## Child Routes (1/3)
 
@@ -214,7 +214,7 @@ This will create the following API structure:
 - `product-details/3/overview`
 - `product-details/3/specs`
 
----
++++
 
 ## Child Routes (2/3)
 
@@ -233,7 +233,7 @@ Using child routes requires an additional `<router-outlet></router-outlet>` just
 
 [View Example](https://plnkr.co/edit/FOeNsspRfjg3PVLiUsip?p=preview)
 
----
++++
 
 ## Child Routes (3/3)
 To access a parent's route parameters:
@@ -253,7 +253,7 @@ export default class Overview {
 }
 ```
 
----
++++
 
 ## Passing Optional Parameters (1/2)
 
@@ -271,7 +271,7 @@ Alternatively, we can navigate programmatically using the `Router` service:
   }
 ```
 
----
++++
 
 ## Passing Optional Parameters (2/2)
 

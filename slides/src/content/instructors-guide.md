@@ -4,7 +4,7 @@
 
 # Instructor's Guide
 
----
++++
 <!-- .slide: id="instructor-guide-time-estimates" -->
 ## Time Estimates
 
@@ -30,7 +30,7 @@
 
 </small>
 
----
++++
 <!-- .slide: id="instructor-guide-learner-profiles" -->
 ## Learner Profiles
 
@@ -44,7 +44,7 @@ Each profile has:
 4.  What they will get out of the course
 5.  Any special needs or consideration
 
----
++++
 <!-- .slide: id="instructor-guide-learner-profile-zuko" -->
 ## Learner Profiles: Zuko
 
@@ -74,7 +74,7 @@ Each profile has:
     and can frequently be found searching Stack Overflow and working on his own examples
     in the middle of lectures.
 
----
++++
 <!-- .slide: id="instructor-guide-learner-profile-toph" -->
 ## Learner Profiles: Toph
 
@@ -99,7 +99,7 @@ Each profile has:
 5.  May be interrupted several times during the course
     to handle critical management issues.
 
----
++++
 <!-- .slide: id="instructor-guide-learner-profile-iroh" -->
 ## Learner Profiles: Iroh
 

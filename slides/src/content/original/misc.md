@@ -1,7 +1,7 @@
 <!-- .slide: data-background="../content/images/title-slide.jpg" -->
 # Miscellaneous Topics
 
----
++++
 
 ## Component Lifecycle
 
@@ -18,7 +18,7 @@ These are the most-used lifecycle hooks:
 
 [View Example](https://plnkr.co/edit/0hHM5hQJLuuwA8scxAil?p=preview)
 
----
++++
 
 ## Change Detection (Angular 1 vs 2)
 

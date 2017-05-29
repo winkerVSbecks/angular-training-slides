@@ -1,7 +1,7 @@
 <!-- .slide: data-background="../content/images/title-slide.jpg" -->
 # Pipes
 
----
++++
 
 ## Built-in Pipes
 
@@ -34,7 +34,7 @@ Notes:
 
 - 3rd argument for currency is whether to show $ symbol
 
----
++++
 
 ## Custom Pipes
 
@@ -60,7 +60,7 @@ Usage:
 <!-- <p>Hello, Mr. Smith</p> -->
 ```
 
----
++++
 
 ## Pure vs Impure Pipes
 
@@ -89,7 +89,7 @@ Notes:
 - Simple types like `string`, `number` and `boolean` are immutable by default
 - Mutating an `object` or an `array` does not change the reference
 
----
++++
 
 ## The Async Pipe
 

@@ -4,7 +4,7 @@
 
 # Displaying Data
 
----
++++
 <!-- .slide: id="display-roadmap" -->
 
 ## Roadmap
@@ -15,7 +15,7 @@
 1. How do I control what is displayed?
 1. When does Angular update its display of data?
 
----
++++
 <!-- .slide: id="display-make-the-data" -->
 ## Make the Data
 
@@ -37,7 +37,7 @@ export class AppComponent {
 }
 ```
 
----
++++
 <!-- .slide: id="display-display-the-data" -->
 ## Display the Data
 
@@ -52,7 +52,7 @@ export class AppComponent {
 
 ![ngFor Output](content/images/screenshot-ngfor.png)
 
----
++++
 <!-- .slide: id="display-ngfor-exports" -->
 ## `*ngFor` Exports Useful Values
 
@@ -66,7 +66,7 @@ export class AppComponent {
 
 - Similarly, `*ngFor` exports `first`, `last`, `even` and `odd` Booleans which can also be assigned to local variables.
 
----
++++
 <!-- .slide: id="display-ngif-1" -->
 ## Nothing to See Here, Folks
 
@@ -82,7 +82,7 @@ export class AppComponent {
 }
 ```
 
----
++++
 <!-- .slide: id="display-ngif-2" -->
 ## Nothing to See Here, Folks
 
@@ -95,7 +95,7 @@ export class AppComponent {
 
 ![ngIf Output](content/images/screenshot-ngif.png)
 
----
++++
 <!-- .slide: id="display-dynamic-content-1" -->
 ## Dynamic Content
 
@@ -119,13 +119,13 @@ export class AppComponent {
 <p *ngIf="thingsCompleted.length == 0">Nothing completed</p>
 ```
 
----
++++
 <!-- .slide: id="display-dynamic-content-2" -->
 ## Dynamic Content
 
 ![Interpolating Method Call](content/images/screenshot-method.png)
 
----
++++
 <!-- .slide: id="display-dynamic-content-3" -->
 ## Dynamic Content
 
@@ -144,7 +144,7 @@ export class AppComponent {
 }
 ```
 
----
++++
 <!-- .slide: id="display-dynamic-content-4" -->
 ## Dynamic Content
 

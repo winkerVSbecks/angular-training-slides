@@ -26,7 +26,7 @@ Equivalent:
 <input [ngModel]="name" (ngModelChange)="name=$event" />
 ```
 
----
++++
 <!-- .slide: id="two-way-data-binding-example-1" -->
 ## Two-Way Data Binding Example
 
@@ -44,7 +44,7 @@ Equivalent:
 
 ![Adding a remove Button](content/images/two-way-databinding.png)
 
----
++++
 <!-- .slide: id="two-way-data-binding-example-2" -->
 ## Two-Way Data Binding Example
 
@@ -68,7 +68,7 @@ export class ToDoListComponent {
 }
 ```
 
----
++++
 <!-- .slide: id="two-way-data-binding-example-3" -->
 ## Two-Way Data Binding Example
 
@@ -81,7 +81,7 @@ export class ToDoListComponent {
 Total items to do: {{ thingsToDo.length }}
 ```
 
----
++++
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 <!-- .slide: id="two-way-data-binding-quiz-1" -->
 ## Quiz
@@ -103,7 +103,7 @@ Selecting ALL of them is correct.
 If the student picks either 3 or 4, it could be that the student forgot that
 the "banana in a box" syntax `[()]` is in fact combination of `[]` and `()`
 
----
++++
 
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 <!-- .slide: id="two-way-data-binding-quiz-2" -->
@@ -127,4 +127,4 @@ Correct answer is 4.
 2. The student might be confusing this with the `@Output()` decorator
 3. The syntax is wrong
 
----
++++

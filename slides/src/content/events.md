@@ -4,7 +4,7 @@
 
 # Handling Events
 
----
++++
 <!-- .slide: id="events-roadmap" -->
 ## Roadmap
 
@@ -14,7 +14,7 @@
 1. How do child components send data to their parents?
 1. How do I use two-way data binding?
 
----
++++
 <!-- .slide: id="events-handling-events" -->
 ## Handling Events
 
@@ -23,7 +23,7 @@
 - `action` is what to do
   - Almost always a method call
 
----
++++
 <!-- .slide: id="events-adding-items-1" -->
 ## Adding Items to the List
 
@@ -38,7 +38,7 @@
 <button (click)="addToDo('make coffee')">make coffee</button>
 ```
 
----
++++
 <!-- .slide: id="events-adding-items-2" -->
 ## Adding Items to the List
 
@@ -57,7 +57,7 @@ export class ToDoListComponent implements OnInit {
 
 ![Adding Items With a Button](content/images/screenshot-add-constant.png)
 
----
++++
 <!-- .slide: id="events-adding-specific-items-1" -->
 ## Adding Specific Items
 
@@ -75,7 +75,7 @@ export class ToDoListComponent implements OnInit {
 </p>
 ```
 
----
++++
 <!-- .slide: id="events-adding-specific-items-2" -->
 ## Adding Specific Items
 
@@ -86,7 +86,7 @@ export class ToDoListComponent implements OnInit {
 
 - Oops
 
----
++++
 <!-- .slide: id="events-adding-specific-items-3" -->
 ## Adding Specific Items (Fixed)
 
@@ -107,7 +107,7 @@ export class ToDoListComponent implements OnInit {
 }
 ```
 
----
++++
 <!-- .slide: id="events-reusable-components" -->
 ## Making a Reusable Component
 
@@ -119,14 +119,14 @@ export class ToDoListComponent implements OnInit {
 - Have the component emit events
 - Angular presents them in the same way as built-in events like `click`
 
----
++++
 <!-- .slide: id="events-component-skeleton" -->
 ## Create the Component Skeleton
 
 - `ng generate component genericInput`
 - Creates `src/app/generic-input/*`
 
----
++++
 <!-- .slide: id="events-move-the-html" -->
 ## Move the HTML
 
@@ -146,7 +146,7 @@ export class ToDoListComponent implements OnInit {
 </p>
 ```
 
----
++++
 <!-- .slide: id="events-move-the-method" -->
 ## Move the Method
 
@@ -166,7 +166,7 @@ export class GenericInputComponent implements OnInit {
 
 - Causes a compilation error because `GenericInputComponent` doesn't have `thingsToDo`
 
----
++++
 <!-- .slide: id="events-create-event-emitter-1" -->
 ## Create an Event Emitter
 
@@ -190,7 +190,7 @@ export class GenericInputComponent implements OnInit {
 }
 ```
 
----
++++
 <!-- .slide: id="events-create-event-emitter-2" -->
 ## A What?
 
@@ -199,7 +199,7 @@ export class GenericInputComponent implements OnInit {
   - Must provide an actual type for events as in `EventEmitter<string>`
 - `GenericInputComponent` is now emitting events, but nobody is listening
 
----
++++
 <!-- .slide: id="events-refactor" -->
 ## Refactor the Main Application
 
@@ -220,7 +220,7 @@ export class GenericInputComponent implements OnInit {
 - `$event` is a special Angular variable that represents the value emitted by the captured event
   - In our case, the string inputted by the user
 
----
++++
 <!-- .slide: id="events-connect-the-wires" -->
 ## Connect the Wires
 
@@ -243,7 +243,7 @@ export class AppComponent {
 
 - No other changes needed
 
----
++++
 <!-- .slide: id="events-final-appearance" -->
 ## Final Appearance
 
@@ -251,7 +251,7 @@ export class AppComponent {
 
 FIXME: diagram showing data flow
 
----
++++
 <!-- .slide: id="events-quiz-1" -->
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
@@ -286,7 +286,7 @@ vs. outputs, and/or two-way bound `[()]` properties.
 outputs must be callbacks. In reality, they are simply expressions
 which also have special handling for callback syntax
 
----
++++
 <!-- .slide: id="events-quiz-2" -->
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
@@ -319,7 +319,7 @@ Correct answer is 2.
 1, 3, 4: This answer may expose a misunderstanding of the input `[]`
 output `()` paradigm and what the syntax represents.
 
----
++++
 <!-- .slide: id="events-quiz-3" -->
 ## Question
 
@@ -348,7 +348,7 @@ export class Child {
 }
 ```
 
----
++++
 <!-- .slide: id="events-quiz-4" -->
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 

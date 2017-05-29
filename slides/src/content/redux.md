@@ -4,7 +4,7 @@
 
 # Managing State with Redux
 
----
++++
 <!-- .slide: id="redux-roadmap" -->
 ## Roadmap
 
@@ -14,7 +14,7 @@
 1. How do we respond to state changes?
 1. What tools are available for working with Redux?
 
----
++++
 <!-- .slide: id="redux-problem" -->
 ## The Problem
 
@@ -22,7 +22,7 @@
 - Different parts of an application can *update* different aspects of its state
 - Those updates can happen asynchronously
 
----
++++
 <!-- .slide: id="redux-what-should-it-do" -->
 ## What Should a Good State Management System Do?
 
@@ -35,7 +35,7 @@
 1. Provide [uni-directional data flow](http://redux.js.org/docs/basics/DataFlow.html)
    so that future developers can reason about interactions
 
----
++++
 <!-- .slide: id="redux-why-a-new-pattern" -->
 ## Why Do We Need a New Pattern?
 
@@ -45,7 +45,7 @@ Server requests are different from user interactions:
 1. User requests often modify the same objects but server requests usually modify different ones
 1. Users expect to be notified about changes immediately: servers are more patient
 
----
++++
 <!-- .slide: id="redux-redux-vs-backend" -->
 ## Similarities of Structure - Redux vs Backend Architecture
 
@@ -56,13 +56,13 @@ Server requests are different from user interactions:
 | Logic to massage data for Storage | `@Effects`           | Services            |
 | Communication                     | Action / Observables | Function Invocation |
 
----
++++
 <!-- .slide: id="redux-redux-as-a-system" -->
 ## Redux as a System
 
 <img src="/content/images/redux-and-data-flow.png" width="50%"/>
 
----
++++
 <!-- .slide: id="redux-the-store" -->
 ## The Store
 
@@ -76,7 +76,7 @@ Server requests are different from user interactions:
 
 FIXME: diagram of state update
 
----
++++
 <!-- .slide: id="redux-actions" -->
 ## Actions
 
@@ -87,7 +87,7 @@ FIXME: diagram of state update
   - `payload`: extra information needed to carry out the action
     - This is just a convention, but a widely-used one
 
----
++++
 <!-- .slide: id="reducers" -->
 ## Reducers
 
@@ -108,7 +108,7 @@ export function reducer(state: AppState = [], action: Action) {
 }
 ```
 
----
++++
 <!-- .slide: id="redux-plan-for-refactoring" -->
 ## Plan for Refactoring
 
@@ -124,7 +124,7 @@ Notes:
 1. We will leave room in our store to add more state later
 1. Angular CLI doesn't know anything about @ngrx, so we have to do most of the work by hand
 
----
++++
 <!-- .slide: id="redux-tools" -->
 ## Redux Tools
 
@@ -134,7 +134,7 @@ Notes:
   - Provides visualization of all actions that have been dispatch
   - Time travelling by moving backwards and forwards on actions that have been dispatch
 
----
++++
 
 <!-- .slide: id="redux-installing-software" -->
 ## Install Required Software
@@ -145,7 +145,7 @@ Notes:
 - The `--save` option updates `package.json`
 - So the next person can just do `npm install`
 
----
++++
 <!-- .slide: id="redux-redux-chrome-extensions" -->
 ## Install Redux Chrome Extensions
 
@@ -157,7 +157,7 @@ Notes:
 
 ![](content/images/chrome-redux-devtools.png)
 
----
++++
 <!-- .slide: id="redux-create-the-reducer-1" -->
 ## Create the Reducer
 
@@ -172,7 +172,7 @@ Notes:
   - More efficient...
   - ...but only if correctness and programmer time aren't issues
 
----
++++
 <!-- .slide: id="redux-create-the-reducer-2" -->
 ## Create the Reducer
 
@@ -193,7 +193,7 @@ const DEFAULT_STATE: AppState = {
 };
 ```
 
----
++++
 <!-- .slide: id="redux-create-the-reducer-3" -->
 ## Create the Reducer
 
@@ -216,7 +216,7 @@ export function reducer(state: AppState = DEFAULT_STATE, action: Action) {
 }
 ```
 
----
++++
 <!-- .slide: id="redux-add-the-store" -->
 ## Add the Store to the Application
 
@@ -240,7 +240,7 @@ export class AppModule { }
 
 - Note the `provideStore` call in `imports`
 
----
++++
 <!-- .slide: id="redux-add-the-storedevtools-to-the-application" -->
 ## Add the StoreDevTools to the Application
 
@@ -260,9 +260,9 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 export class AppModule { }
 ```
 
-- Note the store dev tools in chrome will only work once you have injected the `Store` into a component's constructor. 
+- Note the store dev tools in chrome will only work once you have injected the `Store` into a component's constructor.
 
----
++++
 <!-- .slide: id="redux-clean-up-html" -->
 ## Clean Up the Main Application's HTML
 
@@ -280,7 +280,7 @@ export class AppModule { }
 <app-generic-input (newItem)="onNewItem($event)"></app-generic-input>
 ```
 
----
++++
 <!-- .slide: id="redux-dispatch-actions-for-new-items" -->
 ## Dispatch Actions for New Items
 
@@ -301,7 +301,7 @@ export class AppComponent {
 
 - Note: no longer storing state in `AppComponent`
 
----
++++
 <!-- .slide: id="redux-redux-dev-tools" -->
 ## Redux DevTools
 
@@ -309,7 +309,7 @@ export class AppComponent {
 
 <img src="/content/images/redux-devtools.png" width="50%"/>
 
----
++++
 <!-- .slide: id="redux-update-todo-list-display-1" -->
 ## Update the To-Do List Display
 
@@ -332,7 +332,7 @@ export class ToDoListComponent implements OnInit {
 }
 ```
 
----
++++
 <!-- .slide: id="redux-picking-that-apart" -->
 ## Picking That Apart
 
@@ -352,7 +352,7 @@ export class ToDoListComponent implements OnInit {
 - ...we copy it into the list we're displaying...
   - ...because we don't way to share state
 
----
++++
 <!-- .slide: id="redux-redux-seems-complex" -->
 ## Redux Seems Complex
 
@@ -364,7 +364,7 @@ So let's see how we'd go about deleting items:
 1. Have the store update state when it receives that action
 1. There is no Step 4
 
----
++++
 <!-- .slide: id="redux-update-todo-list-display" -->
 ## Update the To-Do List Display
 
@@ -382,7 +382,7 @@ So let's see how we'd go about deleting items:
 </table>
 ```
 
----
++++
 <!-- .slide: id="redux-provide-deletion-method" -->
 ## Provide the Deletion Method
 
@@ -402,7 +402,7 @@ export class ToDoListComponent implements OnInit {
 
 - Compilation error because `ITEM_DELETE` doesn't yet exist
 
----
++++
 <!-- .slide: id="redux-upgrade-the-store" -->
 ## Upgrade the Store
 
@@ -426,7 +426,7 @@ export function reducer(state: AppState = DEFAULT_STATE, action: Action) {
 }
 ```
 
----
++++
 <!-- .slide: id="redux-getting-info-from-store" -->
 ## Getting Information from a Store
 
@@ -438,7 +438,7 @@ export function reducer(state: AppState = DEFAULT_STATE, action: Action) {
   - By function: `this.store.select(state => state.people)`
 - Can chain other operators like `.filter()`, `.map()` to have finer-grained control over selected data
 
----
++++
 <!-- .slide: id="redux-handle-async-events" -->
 ## Handling Async Events in the Application With Redux
 
@@ -452,7 +452,7 @@ export function reducer(state: AppState = DEFAULT_STATE, action: Action) {
   1. make HTTP call
   1. Provide output to go into store
 
----
++++
 <!-- .slide: id="redux-handling-side-effects" -->
 ## Handling Side Effects with `@Effect`
 
@@ -477,7 +477,7 @@ export class CollectionEffects {
 }
 ```
 
----
++++
 <!-- .slide: id="redux-faq-is-the-reducer-the-store" -->
 ## FAQ
 
@@ -488,7 +488,7 @@ based on a dispatched action. Our actual state is stored outside of
 our reducers. In the case of `@ngrx`, state is stored within an
 `Observable` stream that can be listened to.
 
----
++++
 <!-- .slide: id="redux-faq-can-i-have-more-than-one-store" -->
 ## FAQ
 
@@ -506,7 +506,7 @@ of our state
 We can also take advantage of functional composition, and "combine" multiple
 reducers into one using the `combineReducers` helper function `@ngrx` provides.
 
----
++++
 <!-- .slide id="redux-faq-does-the-ui-broadcast-actions" -->
 ## FAQ
 
@@ -526,7 +526,7 @@ The actions are generally what we call the events being broadcast to
 the store.  When events leave the store due to a state change it is
 done through a store select.
 
----
++++
 <!-- .slide: id="redux-faq-can-we-call-methods-directly" -->
 ## FAQ
 
@@ -542,7 +542,7 @@ The advantage of Redux is that this state management is handled in one
 location which is easier to reason about, and our application can
 simply react whenever application state changes.
 
----
++++
 <!-- .slide: id="redux-faq-can-i-roll-my-own" -->
 ## FAQ
 

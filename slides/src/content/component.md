@@ -4,7 +4,7 @@
 
 # Creating a New Component
 
----
++++
 <!-- .slide: id="components-roadmap" -->
 ## Roadmap
 
@@ -13,7 +13,7 @@
 1. How do I include a component in my display?
 1. How do I pass data to a component?
 
----
++++
 <!-- .slide: id="components-generating-new-components" -->
 ## Generating a New Component
 
@@ -32,7 +32,7 @@
 │   │       └── to-do-list.component.ts
 ```
 
----
++++
 <!-- .slide: id="components-conventions" -->
 ## Conventions
 
@@ -60,7 +60,7 @@ export class ToDoListComponent implements OnInit {
 }
 ```
 
----
++++
 <!-- .slide: id="components-including" -->
 
 ## Including a Component
@@ -77,7 +77,7 @@ export class ToDoListComponent implements OnInit {
 
 ![Child Component (Original)](content/images/screenshot-child-initial.png)
 
----
++++
 <!-- .slide: id="components-passing-data-1" -->
 ## Passing Data to a Component
 
@@ -103,7 +103,7 @@ export class ToDoListComponent implements OnInit {
 Reminder: Angular decorators are functions.
 Even if you don't pass arguments, you need the parentheses.
 
----
++++
 <!-- .slide: id="components-passing-data-2" -->
 
 ## Passing Data to a Component
@@ -127,7 +127,7 @@ Even if you don't pass arguments, you need the parentheses.
 
 - Must single-quote the string or Angular will think it's a function.
 
----
++++
 <!-- .slide: id="components-passing-data-3" -->
 
 ## Passing Data to a Component
@@ -140,7 +140,7 @@ Even if you don't pass arguments, you need the parentheses.
 
 Passing strings to components in this way resembles setting properties in HTML elements.
 
----
++++
 <!-- .slide: id="components-refactoring-1" -->
 
 ## Refactoring
@@ -158,7 +158,7 @@ Passing strings to components in this way resembles setting properties in HTML e
 - `[thingsToDo]` on the *left* is the input parameter in the child
 - `thingsToDo` on the *right* is what we're passing in
 
----
++++
 <!-- .slide: id="components-refactoring-2" -->
 
 ## Refactoring
@@ -184,7 +184,7 @@ export class ToDoListComponent implements OnInit {
 }
 ```
 
----
++++
 <!-- .slide: id="components-refactoring-3" -->
 
 ## Refactoring
@@ -194,7 +194,7 @@ export class ToDoListComponent implements OnInit {
 - More elaborate than necessary if we were stopping here...
 - ...but absolutely necessary to control complexity in large projects
 
----
++++
 <!-- .slide: id="components-quiz-1" -->
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
@@ -222,7 +222,7 @@ inputs and outputs.
 2: This answer may indicate that the learner is thinking of active
 components in a multi-threaded system.
 
----
++++
 <!-- .slide: id="components-quiz-2" -->
 ## Question
 
@@ -249,7 +249,7 @@ export class Child {
 }
 ```
 
----
++++
 <!-- .slide: id="components-quiz-3" -->
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
@@ -281,7 +281,7 @@ implicitly.
 the string "Greeting" down into the child component, not the other way
 around.
 
----
++++
 <!-- .slide: id="components-quiz-4" -->
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
@@ -314,7 +314,7 @@ notation and output/event `()` notation.
 4: May expose confusion with what interpolation is/does and not
 understanding that it's not required here.
 
----
++++
 <!-- .slide: id="components-quiz-5" -->
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 

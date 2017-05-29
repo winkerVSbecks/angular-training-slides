@@ -4,7 +4,7 @@
 
 # Template Driven Forms
 
----
++++
 <!-- .slide: id="template-forms-roadmap" -->
 
 ## Roadmap
@@ -15,7 +15,7 @@
 1. How do I validate form data?
 1. How do I display error messages?
 
----
++++
 <!-- .slide: id="template-forms-overview" -->
 ## Overview
 
@@ -23,7 +23,7 @@
 - Reactive Forms: controls and validation rules defined in the component class or service
   - Explore these in the next section
 
----
++++
 <!-- .slide: id="template-forms-creating" -->
 ## Creating Template Driven Forms
 
@@ -47,7 +47,7 @@ import { FormsModule } from '@angular/forms';
 export class AppModule { }
 ```
 
----
++++
 <!-- .slide: id="template-forms-handing-form-data-1" -->
 ## Handling Form Data
 
@@ -64,7 +64,7 @@ export class AppModule { }
 
 <!-- example: https://plnkr.co/edit/sdVst5yprdQUgQctQz9p?p=preview -->
 
----
++++
 <!-- .slide: id="template-forms-handling-form-data-2" -->
 ## Handling Form Data
 
@@ -74,7 +74,7 @@ export class AppModule { }
 - ...and registers it with the form
 - Every control that registers with the `ngForm` automatically appears in the `form.value` property
 
----
++++
 <!-- .slide: id="template-forms-ngform" -->
 ## NgForm
 
@@ -91,7 +91,7 @@ export class AppModule { }
 </form>
 ```
 
----
++++
 <!-- .slide: id="template-forms-ngmodel-1" -->
 ## NgModel
 
@@ -102,7 +102,7 @@ export class AppModule { }
 - `pristine`: indicates whether the value has changed from the default (Boolean)
 - `touched`: Indicates whether the field was clicked, tabbed, or tapped (Boolean)
 
----
++++
 <!-- .slide: id="template-forms-ngmodel-2" -->
 ## NgModel
 
@@ -119,7 +119,7 @@ export class AppModule { }
 
 <!-- preview: https://plnkr.co/edit/oVQhf641Nx1qpaBG5jeN?p=preview -->
 
----
++++
 <!-- .slide: id="template-forms-template-variables" -->
 ## Template Variables
 
@@ -139,7 +139,7 @@ export class AppModule { }
 
 <!-- preview: https://plnkr.co/edit/oVQhf641Nx1qpaBG5jeN?p=preview -->
 
----
++++
 <!-- .slide: id="template-forms-handling-form-submissions-1" -->
 ## Handling Form Submissions
 
@@ -158,7 +158,7 @@ export class AppModule { }
 </form>
 ```
 
----
++++
 <!-- .slide: id="template-forms-handling-form-submissions-2" -->
 ## Handling Form Submissions
 
@@ -178,7 +178,7 @@ export class GenericInputComponent implements OnInit {
 
 <!-- preview: https://plnkr.co/edit/Xxcf46sO5TWK1EKme1qF?p=preview -->
 
----
++++
 <!-- .slide: id="template-forms-built-in-validators" -->
 ## Built-In Validators
 
@@ -194,7 +194,7 @@ export class GenericInputComponent implements OnInit {
   - prevents additional characters from being entered
   - others only produce a warning
 
----
++++
 <!-- .slide: id="template-forms-performing-validation" -->
 ## Performing Validation
 
@@ -210,7 +210,7 @@ export class GenericInputComponent implements OnInit {
 - As mentioned earlier the template variable `#newItem` is an instance of `FormControl`
 - Has `value`, `valid`, `pristine`, and `touched` properties described earlier
 
----
++++
 <!-- .slide: id="template-forms-displaying-error-messages" -->
 ## Displaying Error Messages
 
@@ -233,7 +233,7 @@ export class GenericInputComponent implements OnInit {
 
 <!-- preview: https://plnkr.co/edit/zgAQW3pQjGqRGhAQvE7j?p=preview -->
 
----
++++
 <!-- .slide: id="template-forms-styling-the-form-1" -->
 ## Styling the Form
 
@@ -248,7 +248,7 @@ export class GenericInputComponent implements OnInit {
 | ng-dirty       | ng-pristine    | The control has been interacted with |
 | ng-touched     | ng-untouched   | The control has been blurred         |
 
----
++++
 <!-- .slide: id="template-forms-styling-the-form-2" -->
 ## Styling the Form
 
@@ -268,7 +268,7 @@ export class GenericInputComponent implements OnInit {
 ```
 <!-- https://plnkr.co/edit/0TR3iu3ANajJdbWixB83?p=preview -->
 
----
++++
 <!-- .slide: id="template-forms-styling-the-form-3" -->
 ## Styling the Form
 
@@ -284,7 +284,7 @@ export class GenericInputComponent implements OnInit {
 }
 ```
 
----
++++
 <!-- .slide: id="template-forms-styling-the-form-4" -->
 ## Styling the Form
 

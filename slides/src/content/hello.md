@@ -4,7 +4,7 @@
 
 # Hello, World
 
----
++++
 <!-- .slide: id="hello-roadmap" -->
 ## Roadmap
 
@@ -13,7 +13,7 @@
 1. How is a component's appearance defined?
 1. How do I run an Angular application?
 
----
++++
 <!-- .slide: id="hello-whats-where-1" -->
 ## What's Where
 
@@ -32,7 +32,7 @@ The root directory has:
   - This can change from platform to platform
   - So that everything else doesn't have to
 
----
++++
 <!-- .slide: id="hello-whats-where-2" -->
 ## What's Where
 
@@ -55,7 +55,7 @@ The *application* as a whole has:
   - CSS: `app.component.css`
   - Test spec: `app.component.spec.ts`
 
----
++++
 <!-- .slide: id="hello-whats-in-the-component-1" -->
 ## What's in the Component?
 
@@ -77,7 +77,7 @@ export class AppComponent {
 - Decorators allows us to alter a class or function
   - In this case, add metadata for Angular to use
 
----
++++
 <!-- .slide: id="hello-whats-in-the-component-2" -->
 ## What's in the Component?
 
@@ -100,7 +100,7 @@ export class AppComponent {
   - `templateUrl` tells it where to find the HTML to use for filling in
   - `styleUrls` is a list of CSS style files to apply to this component
 
----
++++
 <!-- .slide: id="hello-whats-in-the-component-3" -->
 ## What's in the Component?
 
@@ -123,7 +123,7 @@ export class AppComponent {
 - Note that we don't need to declare the type of `title`
   - TypeScript does *type inference* to figure that out
 
----
++++
 <!-- .slide: id="hello-notes-on-components" -->
 ## Notes on Components
 
@@ -145,7 +145,7 @@ export class AppComponent {
 }
 ```
 
----
++++
 <!-- .slide: id="hello-template-syntax" -->
 ## Component Template Syntax
 
@@ -155,7 +155,7 @@ export class AppComponent {
 - In this case, the component instance
 - We'll see lots more syntax later...
 
----
++++
 <!-- .slide: id="hello-running-the-application" -->
 ## Running the Application
 
@@ -166,7 +166,7 @@ export class AppComponent {
 - Should see **app works!**
 - Worth exploring the page using developer tools
 
----
++++
 <!-- .slide: id="hello-quiz" -->
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 

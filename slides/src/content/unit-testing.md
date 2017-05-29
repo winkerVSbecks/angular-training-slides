@@ -5,7 +5,7 @@
 
 # Unit Testing
 
----
++++
 <!-- .slide: id="unit-testing-roadmap" -->
 
 ## Roadmap
@@ -25,7 +25,7 @@
 1. How I test a service that depends on Http?
 1. How do I use a spy to mock a method and check that the correct parameters are passed?
 
----
++++
 <!-- .slide: id="unit-testing-toolchain" -->
 ## Toolchain
 
@@ -36,7 +36,7 @@
   - install with `npm install karma-spec-reporter --save-dev`
   - in `karma.config` change reporters: `reporters: ['spec']`
 
----
++++
 <!-- .slide: id="unit-testing-running-tests" -->
 ## Running Tests
 
@@ -44,7 +44,7 @@
   - Compiles and re-runs tests as files change
 - `ng test --code-coverage`: puts a coverage report in `coverage/` directory
 
----
++++
 <!-- .slide: id="unit-testing-creating-test-files" -->
 ## Creating Test Files
 
@@ -52,7 +52,7 @@
 - Adds `.spec` to test file names so Jasmine and the build system recognize them as tests
 - E.g., `src/app/app.component.spec.ts` does basic tests of `AppComponent`
 
----
++++
 <!-- .slide: id="unit-testing-arrange-act-assert" -->
 ## Arrange, Act and Assert with Jasmine
 
@@ -64,7 +64,7 @@ Note the following in the generated tests:
 - `expect` formulates a scenario
 - `toBeTruthy` is a matcher that asserts the expected outcome
 
----
++++
 <!-- .slide: id="unit-testing-testing-a-pipe" -->
 ## Testing a Pipe
 
@@ -83,7 +83,7 @@ export class CapitalizePipe implements PipeTransform {
 }
 ```
 
----
++++
 <!-- .slide: id="unit-testing-starter-code" -->
 ## Starter Code for Testing
 
@@ -99,7 +99,7 @@ describe('CapitalizePipe', () => {
 });
 ```
 
----
++++
 <!-- .slide: id="unit-testing-instantiate-pipe" -->
 ## Instantiate the Pipe in `beforeEach`
 
@@ -122,7 +122,7 @@ describe('CapitalizePipe', () => {
 
 - Have to declare `pipe` outside `beforeEach` so that it will be visible in test functions
 
----
++++
 <!-- .slide: id="unit-testing-add-a-test" -->
 ## Add a Test
 
@@ -143,7 +143,7 @@ fdescribe('CapitalizePipe', () => {
 }
 ```
 
----
++++
 <!-- .slide: id="unit-testing-instantiating-component--or-service" -->
 ## Instantiating the Component or Service
 
@@ -166,7 +166,7 @@ fdescribe('AppComponent', () => {
 });
 ```
 
----
++++
 <!-- .slide: id="unit-testing-mocking-dependencies" -->
 ## Mocking Dependencies
 
@@ -187,7 +187,7 @@ mockToDoService = {
 
 - We can manually provide this to `AppComponent` by passing it to the constructor
 
----
++++
 <!-- .slide: id="unit-testing-testing-business-logic" -->
 ## Testing Business Logic
 
@@ -215,7 +215,7 @@ mockToDoService = {
   });
 ```
 
----
++++
 <!-- .slide: id="unit-testing-when-to-use-testbed" -->
 ## When to Use TestBed
 
@@ -231,7 +231,7 @@ mockToDoService = {
   - We let Angular do that for us
 - Using the test fixture, Angular will give us the instance it created
 
----
++++
 <!-- .slide: id="unit-testing-configure-the-test-module" -->
 ## Configuring the Test Module
 
@@ -249,7 +249,7 @@ TestBed.configureTestingModule({
 })
 ```
 
----
++++
 
 <!-- .slide: id="unit-testing-testing-components-using-componentfixture" -->
 ## Testing Components Using ComponentFixture
@@ -276,7 +276,7 @@ beforeEach(() => {
 });
 ```
 
----
++++
 
 <!-- .slide: id="unit-testing-shallow-rendering" -->
 ## Shallow Rendering
@@ -295,7 +295,7 @@ Notes:
 
 - `NO_ERRORS_SCHEMA` is also commonly used for shallow rendering
 
----
++++
 <!-- .slide: id="unit-testing-providing-the-real-service" -->
 ## Providing the Real Service
 
@@ -314,7 +314,7 @@ const toDoService = TestBed.get(ToDoService);
 toDoService.items = ['item 1', 'item 2', 'item 3'];
 ```
 
----
++++
 <!-- .slide: id="unit-testing-importing-the-real-module" -->
 ## Importing the Real Module
 
@@ -326,7 +326,7 @@ TestBed.configureTestingModule({
 });
 ```
 
----
++++
 <!-- .slide: id="unit-testing-querying-native-elements" -->
 ## Integration Testing by Querying Native Elements
 
@@ -353,7 +353,7 @@ describe('AppComponent', () => {
 });
 ```
 
----
++++
 <!-- .slide: id="unit-testing-change-detection" -->
 ## Change Detection
 
@@ -369,7 +369,7 @@ fixture.detectChanges();
 // ...
 ```
 
----
++++
 <!-- .slide: id="unit-testing-automatic-change-detection" -->
 ## Automatic Change Detection
 
@@ -385,7 +385,7 @@ TestBed.configureTestingModule({
 });
 ```
 
----
++++
 
 <!-- .slide: id="unit-testing-dealing-with-async" -->
 ## Dealing With Asynchronous Behavior in Tests
@@ -396,7 +396,7 @@ TestBed.configureTestingModule({
   - Webpack will inline our templates and css as part of the build process
   - But we will often need to use `async` and a similar function `fakeAsync` in our tests
 
----
++++
 <!-- .slide: id="unit-testing-running-tests-in-a-zone" -->
 ## Running Tests in a Zone
 
@@ -415,7 +415,7 @@ it('should...', (done) => {
 - Angular's solution is to run all of our test code inside a [Zone.js](https://github.com/angular/zone.js) zone
   where it can track all asynchronous activity and wait for all tasks to complete
 
----
++++
 <!-- .slide: id="unit-testing-zone-js" -->
 ## Interlude: Zone.js
 
@@ -424,7 +424,7 @@ it('should...', (done) => {
 - Zones are used in Angular applications to let Angular know when change detection should run
   - Since change detection is often required after asynchronous operations complete
 
----
++++
 <!-- .slide: id="unit-testing-using-async" -->
 ## Using `async`
 
@@ -441,7 +441,7 @@ it('should...', async(() => {
 
 - Angular will now wait for the `expect` function to complete
 
----
++++
 <!-- .slide: id="unit-testing-using-fakeasync" -->
 ## Using `fakeAsync`
 
@@ -459,7 +459,7 @@ it('should debounce change to search query for 300 ms', fakeAsync(() => {
 }));
 ```
 
----
++++
 <!-- .slide: id="unit-testing-testing-services" -->
 ## Testing Services
 
@@ -471,7 +471,7 @@ it('should debounce change to search query for 300 ms', fakeAsync(() => {
   - Ensure that the data we mock is returned by the right method
   - Ensure that data is being returned in the correct format
 
----
++++
 <!-- .slide: id="unit-testing-testing-http" -->
 ##  ToDoService with HTTP
 
@@ -500,7 +500,7 @@ export class ToDoService {
 }
 ```
 
----
++++
 <!-- .slide: id="unit-testing-light-http-mock" -->
 ## Providing a Light HTTP Mock
 
@@ -525,7 +525,7 @@ describe('toDoService', () => {
   });
   ```
 
----
++++
 <!-- .slide: id="unit-testing-asserting-method" -->
 ## Assert that the Method Retrieves Data
 
@@ -544,7 +544,7 @@ describe('toDoService', () => {
   });
   ```
 
----
++++
 <!-- .slide: id="unit-testing-spying-to-check-url" -->
 ## Using the Spy to Check the URL
 

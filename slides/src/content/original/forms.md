@@ -1,7 +1,7 @@
 <!-- .slide: data-background="../content/images/title-slide.jpg" -->
 # Forms
 
----
++++
 
 ## Forms in Angular
 
@@ -26,12 +26,12 @@ Angular has two approaches to forms:
 - Both modules are available in the package `@angular/forms`
 - Both modules can be imported if both approaches are used
 
----
++++
 
 <!-- .slide: data-background="../content/images/title-slide.jpg" -->
 # Template Driven Forms
 
----
++++
 
 ## Creating a Template Driven Form
 
@@ -54,7 +54,7 @@ Uses Angular directives to handle forms using a markup-oriented approach
 - `ngSubmit` is a built-in event called whenever the form is submitted
 - `ngModel` turns a form field into a `FormControl` using the element `name` property
 
----
++++
 
 ## Inspecting a Form
 
@@ -76,7 +76,7 @@ export class SignupComponent {
 
 [View Example](https://plnkr.co/edit/SmX18R1BhjJz9E33yROT?p=preview)
 
----
++++
 
 ## Nesting Form Data (1/2)
 
@@ -100,7 +100,7 @@ to:
   }
 ```
 
----
++++
 
 ## Nesting Form Data (2/2)
 
@@ -122,7 +122,7 @@ to:
 
 [View Example](https://plnkr.co/edit/HfKItkR8i4O2SysXoW2f?p=preview)
 
----
++++
 
 ## Binding Variables to the Form
 
@@ -148,7 +148,7 @@ Two way data binding will keep the model up to date as the user types.
 
 [View Example](https://plnkr.co/edit/yxLe7Bccx46a0qw9lYHs?p=preview)
 
----
++++
 
 ## Built-in Validators
 
@@ -171,7 +171,7 @@ When using template driven forms we can use 4 built-in validators: `required`, `
 - `pattern` is a less-powerful version of JavaScript's RegExp syntax
 - `maxlength` is special in that it prevents additional characters from being entered. Others only produce a warning.
 
----
++++
 
 ## Validation Example
 
@@ -198,7 +198,7 @@ Template variables are instances of `NgModel` but they share some properties fro
 
 [View Example](https://plnkr.co/edit/bWdmou8gdyqhqsu8jGtI?p=preview)
 
----
++++
 
 ## Visual Cues
 
@@ -220,11 +220,11 @@ Template variables are instances of `NgModel` but they share some properties fro
 
 [View Example](https://plnkr.co/edit/dA0RTZhUgLmDX47vJ3XQ?p=preview)
 
----
++++
 <!-- .slide: data-background="../content/images/title-slide.jpg" -->
 # Model Driven Forms
 
----
++++
 
 ## Creating Model Driven Forms
 
@@ -245,14 +245,14 @@ export class SignupComponent {
       firstName: this.firstName;
     });
   }
-}  
+}
 ```
 
 - `FormControl` tracks the value, state and validity of a form control
 - `FormGroup` tracks the group and validity state of a group of FormControls
 - `FormBuilder` can be used to create `FormGroup`s and `FormControl`s for us
 
----
++++
 
 ## Connecting the Model with the Template
 
@@ -269,7 +269,7 @@ export class SignupComponent {
   </form>
 ```
 
----
++++
 
 ## Validating `FormBuilder` Forms
 
@@ -284,7 +284,7 @@ export class SignupComponent {
   constructor( ... ) {
     this.firstName = new FormControl('', [Validators.minLength(5)]);
     ...
-  }  
+  }
 }
 ```
 
@@ -296,7 +296,7 @@ export class SignupComponent {
 
 [View Example](https://plnkr.co/edit/m8cTaN?p=preview)
 
----
++++
 
 ## Creating Custom Validators
 
@@ -316,7 +316,7 @@ export class CustomValidators {
 
 Note: Validators can also be define as plain functions
 
----
++++
 
 ## Checking a Custom Validator
 
@@ -330,7 +330,7 @@ export class SignupComponent {
   constructor( ... ) {
     this.email = new FormControl('', [ CustomValidators.emailFormat ]);
     ...
-  }  
+  }
 }
 ```
 
@@ -342,7 +342,7 @@ export class SignupComponent {
 
 [View Example](https://plnkr.co/edit/m6heM7?p=preview)
 
----
++++
 
 ## Getting `FormControl`s from the `FormGroup`
 
@@ -371,7 +371,7 @@ this.signupForm = builder.group({
 
 [View Example](https://plnkr.co/edit/TrVihF?p=preview)
 
----
++++
 
 ## Template-Driven vs `FormBuilder`
 

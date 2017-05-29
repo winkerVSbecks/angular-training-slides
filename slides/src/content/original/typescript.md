@@ -1,7 +1,7 @@
 <!-- .slide: data-background="../content/images/title-slide.jpg" -->
 # Introduction to TypeScript
 
----
++++
 
 ## Basics
 
@@ -23,7 +23,7 @@ class Pizza {
 }
 ```
 
----
++++
 
 ## Configuration
 
@@ -51,7 +51,7 @@ class Pizza {
 }
 ```
 
----
++++
 
 ## Typings and Linting
 
@@ -71,7 +71,7 @@ See [here](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/lodash
 - Use `tslint` along with rule configuration in a `tslint.json`
 - Can use with Webpack via `tslint-loader`
 
----
++++
 
 ## Types
 
@@ -90,7 +90,7 @@ It also adds a few new types
 - `any` use any type
 - `void` nothing
 
----
++++
 
 ## Types
 
@@ -128,7 +128,7 @@ logMessage('test', true); // 'Debug: test'
 
 Using a `?` lets `tsc` know that `isDebug` is an optional parameter. `tsc` will not complain if isDebug is omitted.
 
----
++++
 
 ## Classes
 
@@ -155,7 +155,7 @@ class Person {
 }
 ```
 
----
++++
 
 ## Interfaces (1/2)
 
@@ -188,7 +188,7 @@ printOut('hello');       // 'hello'
 printOut(['hi', 'bye']); // 'hi, bye'
 ```
 
----
++++
 
 ## Interfaces (2/2)
 
@@ -214,7 +214,7 @@ class NotAnAction {
 a = new NotAnAction(); // valid TypeScript!
 ```
 
----
++++
 
 ## Type Inference
 
@@ -255,7 +255,7 @@ type-inference-finds-error-2.ts(14,1): error TS2322: Type '(a: number) => void' 
       Property 'type' is missing in type 'Number'.
 ```
 
----
++++
 
 ## Type keyword, and Union Types
 
@@ -288,7 +288,7 @@ goToParty("pizza hut");
 goToParty("chuck e. cheese"); // Argument of type `"chuck e. cheese"' is not assignable to parameter of type 'PartyZone'
 ```
 
----
++++
 
 ## Intersection Types
 
@@ -312,7 +312,7 @@ function attack (warrior: KickPuncher) {
 }
 ```
 
----
++++
 
 ## Function Type Definitions
 
@@ -340,7 +340,7 @@ function sendRequest (cb: (err: Error|null, response: Object) => void): void {
 }
 ```
 
----
++++
 
 ## Decorators
 
@@ -362,7 +362,7 @@ function color(value: string) { // this is the decorator factory
 }
 ```
 
----
++++
 
 ## Property Decorator Examples
 
@@ -396,7 +396,7 @@ t.name = 'jan';
 console.log(t.name); // 'undefined'
 ```
 
----
++++
 
 ## Class Decorator Example
 
@@ -430,7 +430,7 @@ class World {}
 const w = new World(); // outputs "helloWorld"
 ```
 
----
++++
 
 ## Parameter Decorator Example
 

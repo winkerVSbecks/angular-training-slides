@@ -4,7 +4,7 @@
 
 # The HTTP Service
 
----
++++
 <!-- .slide: id="http-roadmap" -->
 ## Roadmap
 
@@ -12,7 +12,7 @@
 1. How can I get data from a server?
 1. How can I send data to a server?
 
----
++++
 <!-- .slide: id="http-http-service" -->
 ## The Built-in `Http` Service
 
@@ -21,7 +21,7 @@
 - Each method returns an `Observable` that emits a single value
 - Connections are closed automatically after the value is emitted
 
----
++++
 <!-- .slide: id="http-importing" -->
 ## Importing the Service
 
@@ -43,7 +43,7 @@ export class AppModule {}
 
 <!-- preview: https://plnkr.co/edit/l4n2upSueYw5UbFjZB1C?p=preview -->
 
----
++++
 <!-- .slide: id="http-json-server" -->
 ## Interlude: Setting Up a JSON Data Server
 
@@ -66,7 +66,7 @@ _src/db.json_
 }
 ```
 
----
++++
 <!-- .slide: id="http-using-on-startup" -->
 ## Using the HTTP Service on Startup
 
@@ -92,7 +92,7 @@ export class AppComponent implements OnInit {
 
 - Get a compiler error (since `toDoService.initialize` isn't defined yet)
 
----
++++
 <!-- .slide: id="http-fetching-data-1" -->
 ## Fetch Data From the Server
 
@@ -118,7 +118,7 @@ export class ToDoService {
 }
 ```
 
----
++++
 <!-- .slide: id="http-fetching-data-2" -->
 ## Fetch Data From the Server
 
@@ -137,7 +137,7 @@ export class ToDoService {
   1. Store lists as objects with an `id` field
 - Which is why we need `jsonToList`
 
----
++++
 <!-- .slide: id="http-sending-data" -->
 ## Send Data to Server
 

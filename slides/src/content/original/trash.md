@@ -28,12 +28,12 @@ Notes:
 - Styles apply only to the component similar to shadow root
 - We can define other encapsulation modes using the `encapsulation` property
 
----
++++
 
 
 # Interpolation
 
----
++++
 
 ## Using Properties, Methods and Statements
 
@@ -65,11 +65,11 @@ Notes:
 - Public and private properties/methods can be used
 - It is a good practice to define as "public" any property/method used in the template 
 
----
++++
 
 # Events
 
----
++++
 
 ## The (click) Event
 
@@ -99,11 +99,11 @@ Notes:
 - We can pass the special object $event to get more info
 - We can create our own custom events
 
----
++++
 
 # Structural Directives
 
----
++++
 
 ## ngIf
 
@@ -132,7 +132,7 @@ export class AppComponent {
 }
 ```
 
----
++++
 
 ## ngFor
 
@@ -159,11 +159,11 @@ export class AppComponent {
 }
 ```
 
----
++++
 
 # Attribute Directives
 
----
++++
 
 ## ngClass
 
@@ -189,11 +189,11 @@ export class AppComponent {
 
 [View Example](http://localhost:4200/examples/4.1-ng-if/index.html)
 
----
++++
 
 # Services
 
----
++++
 
 ## Using Services to Get Data
 
@@ -222,7 +222,7 @@ export class AppComponent implements OnInit {
 }
 ```
 
----
++++
 
 ## Service Definition
 
@@ -243,7 +243,7 @@ export class ListService {
 }
 ```
 
----
++++
 
 ## Registering a Service in a Module
 
@@ -265,11 +265,11 @@ import { ListService } from './list.service';
 export class AppModule {}
 ```
 
----
++++
 
 # Component Tree
 
----
++++
 
 ## Nesting a Component
 
@@ -288,7 +288,7 @@ import { Component } from '@angular/core';
 export class AppComponent {}
 ```
 
----
++++
 
 ## The Child Component
 
@@ -304,7 +304,7 @@ import { Component } from '@angular/core';
 export class MessageComponent {}
 ```
 
----
++++
 
 ## Declaring the Components in the Module
 
@@ -328,15 +328,15 @@ import { MessageComponent } from './message.component';
 export class AppModule {}
 ```
 
----
++++
 
 # Exercise
 
----
++++
 
 # Bindings
 
----
++++
 
 ## Unidirectional Data Flow
 
@@ -379,11 +379,11 @@ export class AppComponent {
 
 [View Example](http://localhost:4200/examples/7.0-bindings/index.html)
 
----
++++
 
 # Inputs
 
----
++++
 
 ## Passing Values to Nested Components
 
@@ -401,7 +401,7 @@ export {CustomComponent} from './custom.component';
 export class AppComponent {}
 ```
 
----
++++
 
 ## Capturing Values with @Input
 
@@ -419,11 +419,11 @@ export class CustomComponent {
 
 [View Example](http://localhost:4200/examples/8.0-inputs/index.html)
 
----
++++
 
 # Output
 
----
++++
 
 ## Listening to Custom Events
 
@@ -446,7 +446,7 @@ export class AppComponent {
 }
 ```
 
----
++++
 
 ## Defining Custom Events with @Output
 
@@ -471,11 +471,11 @@ export class ClickableComponent {
 
 [View Example](http://localhost:4200/examples/9.0-outputs/index.html)
 
----
++++
 
 # Two Way Data Bindings
 
----
++++
 
 ## The "Banana in a Box" Syntax
 
@@ -495,7 +495,7 @@ export class AppComponent {
 }
 ```
 
----
++++
 
 ## Child Component
 
@@ -517,13 +517,13 @@ export class ChildComponent {
 
 [View Example](http://localhost:4200/examples/10.0-two-way-binding/index.html)
 
----
++++
 
 
 
 #Components
 
----
++++
 
 ## Components In Angular 2
 
@@ -531,7 +531,7 @@ export class ChildComponent {
 - In effect, the whole application can be modeled as a tree of these components.
 - A component controls a patch of screen real estate that we could call a view, and declares reusable UI building blocks for an application.
 
----
++++
 
 ## Creating Components
 
@@ -557,7 +557,7 @@ export class Hello {
 
 To use this component we simply add <hello></hello> to our HTML: [View Example](http://plnkr.co/edit/LmsR4psbJZwXH0c4lpMa?p=preview)
 
----
++++
 
 ## Application Structure with Components
 
@@ -574,11 +574,11 @@ A useful way of conceptualizing Angular application design is to look at it as a
 </TodoApp>
 ```
 
----
++++
 
 # Dependency Injection (DI)
 
----
++++
 
 ## Angular 2 Dependency Injection
 
@@ -587,7 +587,7 @@ A useful way of conceptualizing Angular application design is to look at it as a
 - DI enables more flexible codes and much easier testing process during development cycle.
 - The tooling issues in Angular 1.x with respect to static analysis, minification and namespace collisions have been fixed in Angular 2.
 
----
++++
 
 ## What's DI? (1/11)
 
@@ -613,7 +613,7 @@ class ChatWidget {
 - `ChatWidget` consists of `AuthService`, `AuthWidget` and `ChatSocket`.
 - `ChatWidget` is also responsible for making all its dependencies.
 
----
++++
 
 ## What's DI? (2/11)
 
@@ -636,7 +636,7 @@ class ChatWidget {
 
 But what if we need a smaller auth widget? or we want to turn off encryption?
 
----
++++
 
 ## What's DI? (3/11)
 
@@ -660,7 +660,7 @@ class ChatWidget {
 - Still brittle, because `ChatWidget` still needs to know the construction details of its dependencies.
 - Changes on any constructor of `ChatWidget`'s dependencies would also require a change on `ChatWidget`'s constructor.
 
----
++++
 
 ## What's DI? (4/11)
 
@@ -684,7 +684,7 @@ class ChatWidget {
 - `ChatWidget` has no knowledge about how to construct its dependencies.
 - Changes on its dependencies' constructor does not effect `ChatWidget`'s constructor.
 
----
++++
 
 ## What's DI? (5/11)
 
@@ -705,7 +705,7 @@ class ChatWidget {
 
 But how DI constructs `ChatWidget`'s dependencies?
 
----
++++
 
 ## What's DI? (6/11)
 
@@ -721,7 +721,7 @@ const chatWidget = new ChatWidget(
 
 That's a lot of work to create a `ChatWidget`, and now all the different pieces of code that make `ChatWidget` have to understand how `AuthService`, `AuthWidget` and `ChatSocket` get instantiated.
 
----
++++
 
 ## What's DI? (7/11)
 
@@ -740,7 +740,7 @@ function chatWidgetFactory() {
 - An improvement. But when the `ChatWidget` gets more complex, this factory will become confusing.
 - The factory is also responsible for knowing how to create four different components, which is a lot for one function.
 
----
++++
 
 ## What's DI? (8/11)
 
@@ -760,7 +760,7 @@ const chatApp = injector.get(ChatWidget);
 - An `Injector` is a lot like the previous factory function, but more general, and powerful.
 - Instead of one giant factory function, an `Injector` has a factory, or recipe for a collection of objects.
 
----
++++
 
 ## What's DI? (9/11)
 
@@ -770,7 +770,7 @@ How about Angular 2's DI?
 - Angular 2's DI system is (mostly) controlled through `@NgModule`.
 - Specifically the `declarations` and `providers` array: `declarations` is where we put components, pipes and directives; `providers` is where we put services.
 
----
++++
 
 ## What's DI? (10/11)
 
@@ -799,7 +799,7 @@ export class AppModule {};
 - Angular 2 assumes that `ChatWidget` is a class.
 - How does Angular know about `AuthService`, `AuthWidget` and `ChatSocket`?
 
----
++++
 
 ## What's DI? (11/11)
 
@@ -838,7 +838,7 @@ class ChatSocket {}
 export class AppModule {};
 ```
 
----
++++
 
 ## @Inject and @Injectable
 
@@ -847,7 +847,7 @@ export class AppModule {};
 - `@Injectable()` lets Angular 2 know that a class can be used with the dependency injector.
 - `@Injectable()` is not _strictly_ required if the class does not have any dependencies.
 
----
++++
 
 ## How @Inject Works
 
@@ -869,7 +869,7 @@ export class App {
 
 [View Example](https://plnkr.co/edit/lbRrkR03ecXecvulcsV8?p=preview)
 
----
++++
 
 ## How @Inject Works
 
@@ -891,7 +891,7 @@ export class App {
 
 So `@Inject(ChatWidget) chatWidget` can actually be replaced by `chatWidget: ChatWidget`.
 
----
++++
 
 ## How @Injectable Works
 
@@ -916,7 +916,7 @@ export class ChatWidget {
 
 [View Example](https://plnkr.co/edit/lbRrkR03ecXecvulcsV8?p=preview)
 
----
++++
 
 ## Injection Beyond Classes (1/4) - useClass
 
@@ -934,7 +934,7 @@ export class AppModule {};
 
 - Besides `useClass`, Angular also provides `useValue`, `useFactory`.
 
----
++++
 
 ## Injection Beyond Classes (2/4) - Mocks
 
@@ -953,7 +953,7 @@ export class AppModule {};
 - Best part: the injection system knows how to build `MockAuthService`, and will not get developers bogged down.
 - Also enables easy and neat testing process.
 
----
++++
 
 ## Injection Beyond Classes (3/4) - useFactory
 
@@ -974,7 +974,7 @@ export class AppModule {};
 
 [View Example](http://plnkr.co/edit/Dkm0cJF80EdmPcWZx45W?p=preview)
 
----
++++
 
 ## Injection Beyond Classes (4/4) - useValue
 
@@ -993,7 +993,7 @@ export class AppModule {};
 
 [View Example](http://plnkr.co/edit/63GsCDOElY7J8LNAbTjL?p=preview)
 
----
++++
 
 ## The Injector Tree (1/4)
 
@@ -1003,7 +1003,7 @@ How injector gets handled then?
 - The injector tree does not make a new injector for every component, but does make a new injector for every component with a `providers` array in its decorator.
 - Components that have no `providers` array look to their parent component for an injector. If the parent does not have an injector, it looks up until it reaches the root injector.
 
----
++++
 
 ## The Injector Tree (2/4)
 
@@ -1025,7 +1025,7 @@ export class Unique {
 }
 ```
 
----
++++
 
 ## The Injector Tree (3/4)
 
@@ -1052,7 +1052,7 @@ export class ChildInheritor { constructor(u: Unique) {} }
 The expectation is that `ChildInheritor` should have same `Unique` instance as `App`,
 but it turns out that in this case, _different_ `Unique` instances would be assigned to these two components.
 
----
++++
 
 ## The Injector Tree (4/4)
 

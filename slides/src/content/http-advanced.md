@@ -5,13 +5,13 @@
 
 # Advanced HTTP
 
----
++++
 <!-- .slide: id="http-advanced-roadmap" -->
 ## Roadmap
 
 FIXME: this module needs to be updated and proof-read
 
----
++++
 <!-- .slide: id="http-advanced-catch-operator" -->
 ## Using the `.catch` operator
 
@@ -33,7 +33,7 @@ FIXME: this module needs to be updated and proof-read
   });
 ```
 
----
++++
 <!-- .slide: id="http-advanced-cancel-request" -->
 ## Cancel a Request
 
@@ -53,7 +53,7 @@ FIXME: this module needs to be updated and proof-read
 ```
 [View Example](http://plnkr.co/edit/MByeTy?p=preview)
 
----
++++
 <!-- .slide: id="http-advanced-cancel-request-with-takeuntil" -->
 ## Cancel a Request with `takeUntil`
 
@@ -77,7 +77,7 @@ search() {
 
 [View Example](https://plnkr.co/edit/v2aGkTCmi34jBr7an1i8?p=preview)
 
----
++++
 <!-- .slide: id="http-advanced-retry-request" -->
 ## Retry a request
 

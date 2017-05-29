@@ -2,7 +2,7 @@
 
 # Introduction to ES6/ES2015
 
----
++++
 
 ## Classes
 
@@ -42,7 +42,7 @@ burger.toppings = ['onion', 'tomatoes'];  // calls the setter
 console.log(burger.toppings);             // calls the getter and returns topings are ['onions', 'tomatoes']
 ```
 
----
++++
 ## `this`
 
 - When called using dot notation an object's method's `this` will be the object, in other cases `this` won't be the object (unless bound)
@@ -71,7 +71,7 @@ let foundThis = toppings.list.bind(toppings);
 foundThis() // this will work
 ```
 
----
++++
 
 ## Arrow Functions (1/2)
 
@@ -103,7 +103,7 @@ class Toppings {
 }
 ```
 
----
++++
 
 ## Arrow Functions (2/2)
 
@@ -123,7 +123,7 @@ incrementedItems = items.map((x) => x+1); // for single return expression can si
 incrementedItems = items.map(x => x+1);   // when a single param can remove parantheses
 ```
 
----
++++
 
 ## Template Strings
 
@@ -137,7 +137,7 @@ console.log(`hello my name is ${name}, and I am ${age} years old`); // Template 
 
 - ES6 introduces a new type of string literal that is marked with back ticks (`). These string literals can include newlines, and there is a string interpolation for inserting variables into strings
 
----
++++
 
 ## Inheritance (1/2)
 
@@ -170,7 +170,7 @@ penguin.walk(); //walk!
 penguin.swim(); //swim!
 ```
 
----
++++
 
 ## Inheritance (2/2)
 
@@ -205,7 +205,7 @@ penguin.walk(); // walk!
 penguin.swim(); // swim!
 ```
 
----
++++
 
 ## `const` and `let`
 
@@ -241,7 +241,7 @@ person.name = 'Pushpa'; // OK, name property changed.
 person = null;          // "TypeError: Assignment to constant variable.
 ```
 
----
++++
 
 ## Spread syntax and Rest parameters (`...`)
 
@@ -276,7 +276,7 @@ function print(a, b, c, ...more) {
 print(1, 2, 3, 4, 5); // 4, 1
 ```
 
----
++++
 
 ## Destructuring
 
@@ -306,7 +306,7 @@ sayName(jane) // -> Hello Jane N/A Doe
 sayName(john) // -> Helo John Smith Doe
 ```
 
----
++++
 
 ## Modules
 
@@ -333,7 +333,7 @@ import exp, { pi, e } from "lib/mathplusplus"
 console.log("e^{π} = " + exp(pi))
 ```
 
----
++++
 
 ## Promises
 
@@ -354,7 +354,7 @@ msgAfterTimeout("", "Foo", 100).then((msg) =>
 })
 ```
 
----
++++
 
 ## Promises
 

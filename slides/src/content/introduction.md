@@ -4,7 +4,7 @@
 
 # Introduction
 
----
++++
 <!-- .slide: id="introduction-about-rangle" -->
 ## About Rangle.io
 
@@ -12,14 +12,14 @@
 transformation consultancy specializing in JavaScript development
 services and solutions.
 
----
++++
 <!-- .slide: id="introduction-about-us" -->
 ## About Us <!-- FIXME: fill in trainer bios -->
 
 *   Trainer 1
 *   Trainer 2
 
----
++++
 <!-- .slide: id="introduction-structure-in-person" -->
 ## Structure (In-Person) <!-- FIXME: delete if online -->
 
@@ -28,7 +28,7 @@ services and solutions.
 - An hour for lunch at mid-day
 - Hands on
 
----
++++
 <!-- .slide: id="introduction-structure-online" -->
 ## Structure (Online) <!-- FIXME: delete if in person -->
 
@@ -39,7 +39,7 @@ services and solutions.
   - We will build and test a small application
   - Please ask lots of questions
 
----
++++
 <!-- .slide: id="introduction-syllabus" -->
 ## Syllabus
 
@@ -53,7 +53,7 @@ services and solutions.
    * AM: forms
    * PM: routing
 
----
++++
 <!-- .slide: id="introduction-why-angular" -->
 ## Why Angular?
 

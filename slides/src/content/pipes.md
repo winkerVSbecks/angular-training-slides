@@ -4,14 +4,14 @@
 
 # Pipes
 
----
++++
 <!-- .slide: id="pipes-roadmap" -->
 ## Roadmap
 
 1. How do I format data using a pipe?
 1. How do I create my own pipes?
 
----
++++
 <!-- .slide: id="pipes-motivation" -->
 ## Motivation
 
@@ -22,7 +22,7 @@
 - Angular comes with several pipes for common operations
 - Very easy to add new ones
 
----
++++
 <!-- .slide: id="pipes-using-a-pipe" -->
 ## Using a Pipe
 
@@ -40,7 +40,7 @@
 
 ![Converting to Upper Case](content/images/screenshot-uppercase.png)
 
----
++++
 <!-- .slide: id="pipes-passing-arguments" -->
 ## Passing Arguments to the Pipe
 
@@ -58,7 +58,7 @@ produces:
 Price is ca$100.12
 ```
 
----
++++
 <!-- .slide: id="pipes-built-in-pipes" -->
 ## Built-in Angular Pipes
 
@@ -68,7 +68,7 @@ Price is ca$100.12
 - [currency](https://angular.io/docs/ts/latest/api/common/index/CurrencyPipe-pipe.html): formats a number as a currency
 - [percent](https://angular.io/docs/ts/latest/api/common/index/PercentPipe-pipe.html): formats a number as a percentage
 
----
++++
 <!-- .slide: id="pipes-generating-pipes" -->
 ## Generating a Pipe
 
@@ -84,7 +84,7 @@ Price is ca$100.12
 │   │   └── titlecase.ts
 ```
 
----
++++
 <!-- .slide: id="pipes-whats-in-a-pipe" -->
 ## What's in a Pipe?
 
@@ -108,7 +108,7 @@ export class TitlecasePipe implements PipeTransform {
 - `transform` accepts an initial `value` and optionally some `arguments`
 - Returns a transformed value
 
----
++++
 <!-- .slide: id="pipes-defining-our-transformation" -->
 ## Defining Our Transformation
 
@@ -123,7 +123,7 @@ export class TitlecasePipe implements PipeTransform {
 }
 ```
 
----
++++
 <!-- .slide: id="pipes-using-our-pipe" -->
 ## Using Our Pipe
 

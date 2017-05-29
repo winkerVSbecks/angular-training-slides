@@ -1,7 +1,7 @@
 <!-- .slide: data-background="../content/images/title-slide.jpg" -->
 # Components In Depth
 
----
++++
 
 ## Passing Data to a Component (1/2)
 
@@ -27,7 +27,7 @@ export class GreeterComponent {
 }
 ```
 
----
++++
 
 ## Passing Data to a Component (2/2) - Tips
 
@@ -54,7 +54,7 @@ export class GreeterComponent {
 
 [View Example](https://plnkr.co/edit/2cOXJj?p=preview)
 
----
++++
 
 ## Responding to DOM Events
 
@@ -81,7 +81,7 @@ export class CounterComponent {
 
 [View Example](https://plnkr.co/edit/ZDBPDJuPjpZq077HAQhu?p=preview)
 
----
++++
 
 ## Creating Custom Events
 
@@ -107,7 +107,7 @@ export class CounterComponent {
 }
 ```
 
----
++++
 
 ## Listening to Custom Events
 
@@ -135,7 +135,7 @@ export class AppComponent {
 
 [View Example](http://plnkr.co/edit/2NwExD?p=preview)
 
----
++++
 
 ## Two-Way Data Binding
 
@@ -164,7 +164,7 @@ Which is equivalent to:
 <input [ngModel]="name" (ngModelChange)="name=$event" />
 ```
 
----
++++
 
 ## Two-Way Data Binding Example
 
@@ -193,7 +193,7 @@ class AppComponent { myNumber = 0 }
 
 [View Example](http://plnkr.co/edit/nJZQYSV23sCcbb37FzLN?p=preview)
 
----
++++
 
 ## Quiz
 
@@ -213,7 +213,7 @@ the "banana in a box" syntax `[()]` is in fact combination of `[]` and `()`
 
 </aside>
 
----
++++
 
 ## Creating a Template Variable from a Native Element
 
@@ -239,7 +239,7 @@ export class AppComponent {
 
 [View Example](https://plnkr.co/edit/uQJZH2?p=preview)
 
----
++++
 
 ## Creating a Template Variable from a Component
 
@@ -269,7 +269,7 @@ export class AppComponent {
 
 [View Example](https://plnkr.co/edit/GZb6Tr?p=preview)
 
----
++++
 
 ## Creating a Template Variable from a Directive
 
@@ -293,7 +293,7 @@ export class AppComponent {
     this.values = form.value;
   }
 }
-```    
+```
 
 [View Example](https://plnkr.co/edit/ttVaCf?p=preview)
 
@@ -302,7 +302,7 @@ Notes:
 - The value of the property `exportedAs` of the directive `NgForm` is `ngForm`
 - The enhanced component instance has validation, the native `form` component doesn't
 
----
++++
 
 ## Template Projection
 
@@ -331,7 +331,7 @@ class ChildComponent {}
 
 [View Example](http://plnkr.co/edit/oqkyldgOxykReRsffVxZ?p=preview)
 
----
++++
 
 ## Defining Multiple Projection Areas
 
@@ -355,7 +355,7 @@ class ChildComponent {}
 
 [View Example](https://plnkr.co/edit/kwD3iKLU8mELAoHj2fBv?p=preview)
 
----
++++
 
 ## Multiple Projections with Class Selectors
 
@@ -384,7 +384,7 @@ class ChildComponent {}
 
 [View Example](https://plnkr.co/edit/YQTUGbOxhxZ41iKKpTbV?p=preview)
 
----
++++
 
 ## Smart vs Dumb Components
 
@@ -400,7 +400,7 @@ Components can be classified as "smart" or "dumb" depending on how coupled are t
 | Easy to test?           | No                   | Yes                       |
 | A.K.A                   | Container Components | Presentational Components |
 
----
++++
 
 ## Quiz
 
@@ -418,7 +418,7 @@ Correct answer is "declarations".
 
 </aside>
 
----
++++
 
 ## Quiz
 
@@ -436,7 +436,7 @@ Correct answer is "declarations".
 
 </aside>
 
----
++++
 
 ## Quiz
 

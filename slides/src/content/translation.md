@@ -4,13 +4,13 @@
 
 # Translations
 
----
++++
 <!-- .slide: id="translation-roadmap" -->
 ## Roadmap
 
 - How do I localize an Angular application?
 
----
++++
 <!-- .slide: id="translation-setting-up-1" -->
 ## Setting Up
 
@@ -21,7 +21,7 @@
 - Use `TranslateModule.forRoot()` to configure the `TranslateModule`
   - `TranslateModule.forRoot()` should be only called once in your root module
 
----
++++
 <!-- .slide: id="translation-setting-up-2" -->
 ## Setting Up
 
@@ -38,7 +38,7 @@ import { TranslateModule } from '@ngx-translate/core';
 export class AppModule { }
 ```
 
----
++++
 <!-- .slide: id="translation-configuring-the-translation-module-1" -->
 ## Configuring the Translation Module
 
@@ -50,7 +50,7 @@ export class AppModule { }
   - Optionally define the folder that holds the translation files (defaults to `/assets/i18n/`)
   - Optionally define the file extension for your translation files (defaults to `.json`)
 
----
++++
 <!-- .slide: id="translation-configuring-the-translation-module-2" -->
 ## Configuring the Translation Module
 
@@ -72,7 +72,7 @@ export function HttpLoaderFactory(http: Http) {
   // ...
 ```
 
----
++++
 <!-- .slide: id="translation-creating-translation-files" -->
 ## Creating Translation Files
 
@@ -98,7 +98,7 @@ export function HttpLoaderFactory(http: Http) {
 
 - Translations can be accessed using dot notation: `HOME.TITLE`
 
----
++++
 <!-- .slide: id="translation-programmatically-creating-translations" -->
 ## Programmatically Creating Translations
 
@@ -123,7 +123,7 @@ const browserLang = translate.getBrowserLang();
 translate.use(browserLang.match(/en|fr/) ? browserLang : 'en');
 ```
 
----
++++
 <!-- .slide: id="translation-usage" -->
 ## Usage
 

@@ -1,7 +1,7 @@
 <!-- .slide: data-background="../content/images/title-slide.jpg" -->
 # Using the Angular CLI
 
----
++++
 
 ## What is `angular-cli`
 
@@ -13,7 +13,7 @@ Install with the following command:
   npm install -g @angular/cli
 ```
 
----
++++
 
 ## Creating a New Project
 
@@ -26,7 +26,7 @@ For example, the following command would initialize a project named `myAwesomePr
   ng new myAwesomeProject
 ```
 
----
++++
 
 ## Quiz
 
@@ -51,7 +51,7 @@ This could be a good chance to bring it up that it's convention.
 
 </aside>
 
----
++++
 
 ## Code Generation
 
@@ -75,7 +75,7 @@ For example, to generate a component called `test`, use the following command
   ng g c test                   # short hand for command
 ```
 
----
++++
 
 ## Running Your Application
 
@@ -86,7 +86,7 @@ To run your application, use the following command
 ```
 `ng serve` also rebuilds your application when a change is detected
 
----
++++
 
 ## Testing
 

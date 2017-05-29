@@ -5,7 +5,7 @@
 
 # Reactive Forms
 
----
++++
 <!-- .slide: id="reactive-forms-roadmap" -->
 ## Roadmap
 
@@ -14,7 +14,7 @@
 1. How do I validate a reactive form?
 1. How can I create my own validators?
 
----
++++
 <!-- .slide: id="reactive-forms-overview" -->
 ## Overview (again)
 
@@ -27,7 +27,7 @@
 - Do *not* use `ngModel` and `required` in the template
  - Define the validation and model as part of our component
 
----
++++
 <!-- .slide: id="reactive-forms-creating" -->
 ## Creating Reactive Forms
 
@@ -51,7 +51,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 export class AppModule { }
 ```
 
----
++++
 <!-- .slide: id="reactive-forms-declaring-1" -->
 ## Declaring a Reactive Form
 
@@ -62,7 +62,7 @@ export class AppModule { }
 - We will rebuild our `GenericInputComponent` to use these
   - Will get compilation errors until modifications complete
 
----
++++
 <!-- .slide: id="reactive-forms-declaring-2" -->
 ## Declaring a Reactive Form
 
@@ -87,7 +87,7 @@ export class GenericInputComponent implements OnInit {
 }
 ```
 
----
++++
 <!-- .slide: id="reactive-forms-modifying-the-view" -->
 ## Modifying the View
 
@@ -103,7 +103,7 @@ export class GenericInputComponent implements OnInit {
 - Unlike template driven forms, we do not use `required` or `ngModel`
 - Also not creating any template variables
 
----
++++
 <!-- .slide: id="reactive-forms-validating-1" -->
 ## Validating Reactive Forms
 
@@ -122,7 +122,7 @@ export class GenericInputComponent {
 }
 ```
 
----
++++
 <!-- .slide: id="reactive-forms-validating-2" -->
 ## Validating Reactive Forms
 
@@ -138,7 +138,7 @@ export class GenericInputComponent {
 
 <!-- preview: https://plnkr.co/edit/m8cTaN?p=preview -->
 
----
++++
 <!-- .slide: id="reactive-forms-custom-validators-1" -->
 ## Custom Validators
 
@@ -161,7 +161,7 @@ export class CustomValidators {
 - Note: validators can also be defined as plain functions
 - And we really ought to put our validators in their own files...
 
----
++++
 <!-- .slide: id="reactive-forms-custom-validators-2" -->
 ## Custom Validators
 
@@ -185,7 +185,7 @@ export class GenericInputComponent {
 </li>
 ```
 
----
++++
 <!-- .slide: id="reactive-forms-custom-validators-3" -->
 ## Custom Validators
 
@@ -193,7 +193,7 @@ export class GenericInputComponent {
 
 <!-- preview: https://plnkr.co/edit/m6heM7?p=preview -->
 
----
++++
 <!-- .slide: id="reactive-forms-separating-forms-into-logical-sections" -->
 ## Separating Forms into Logical Sections
 
@@ -204,7 +204,7 @@ export class GenericInputComponent {
   - Which means using reactive forms
 - We can create nested `FormGroup`s within other `FormGroup`s
 
----
++++
 <!-- .slide: id="reactive-forms-start-with-a-model" -->
 ## Start With a Model
 
@@ -223,7 +223,7 @@ export class GenericInputComponent {
 }
 ```
 
----
++++
 <!-- .slide: id="reactive-forms-converting-to-code" -->
 ## Converting to Code
 
@@ -246,7 +246,7 @@ export class StructuredFormComponent implements OnInit {
 }
 ```
 
----
++++
 <!-- .slide: id="reactive-forms-building-the-form-1" -->
 ## Building the Form
 
@@ -264,7 +264,7 @@ constructor(
 }
 ```
 
----
++++
 <!-- .slide: id="reactive-forms-building-the-form-2" -->
 ## Building the Form
 
@@ -289,7 +289,7 @@ export class StructuredFormComponent implements OnInit {
 
 - The other group is built the same way
 
----
++++
 <!-- .slide: id="reactive-forms-building-the-form-3" -->
 ## Building the Form
 
@@ -315,7 +315,7 @@ export class StructuredFormComponent implements OnInit {
 
 <!-- preview: http://plnkr.co/edit/rJ576V7ncL0Fjm3T7zpt?p=preview -->
 
----
++++
 <!-- .slide: id="reactive-forms-using-the-form" -->
 ## Using the Form
 
@@ -340,7 +340,7 @@ export class StructuredFormComponent implements OnInit {
 </form>
 ```
 
----
++++
 <!-- .slide: id="reactive-forms-wire-it-up" -->
 ## Wire It Up
 
@@ -365,13 +365,13 @@ export class StructuredFormComponent implements OnInit {
 <app-structured-form (newItem)="onNewItem($event)"></app-structured-form>
 ```
 
----
++++
 <!-- .slide: id="reactive-forms-appearance" -->
 ## Appearance
 
 ![Form With Groups](content/images/screenshot-grouped-form.png)
 
----
++++
 <!-- .slide: id="reactive-forms-shortcuts" -->
 ## Shortcuts
 

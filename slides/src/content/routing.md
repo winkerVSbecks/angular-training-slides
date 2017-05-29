@@ -4,14 +4,14 @@
 
 # Routing
 
----
++++
 <!-- .slide: id="routing-roadmap" -->
 ## Roadmap
 
 1. How do I route different URLs to different parts of an application?
 1. How do I change what is displayed based on the URL?
 
----
++++
 <!-- .slide: id="routing-why-routing" -->
 ## Why Routing?
 
@@ -22,7 +22,7 @@
   - Can build applications that never change URL
   - But that makes locations within the application un-bookmarkable
 
----
++++
 <!-- .slide: id="routing-fancy-lists" -->
 ## Fancy Lists
 
@@ -47,7 +47,7 @@ td.item {
 }
 ```
 
----
++++
 <!-- .slide: id="routing-configuring-routing" -->
 ## Configuring Routing
 
@@ -61,7 +61,7 @@ td.item {
 - Allows applications to be hosted below the root of the domain
   - E.g., `http://rangle.io/some/path` would set `base` to `/some/path`
 
----
++++
 <!-- .slide: id="routing-defining-routes" -->
 ## Defining Routes
 
@@ -81,7 +81,7 @@ export const routeConfig: Routes = [
 ];
 ```
 
----
++++
 <!-- .slide: id="routing-common-attributes-in-routes" -->
 ## Common Attributes in Routes
 
@@ -96,7 +96,7 @@ export const routeConfig: Routes = [
 - `component` and `redirectTo` are mutually exclusive
 - `children` will be discussed later
 
----
++++
 <!-- .slide: id="routing-adding-router-module" -->
 ## Adding Router Module
 
@@ -120,7 +120,7 @@ import { routeConfig } from './app.routes';
 export class AppModule { }
 ```
 
----
++++
 <!-- .slide: id="routing-adding-router-outlet" -->
 ## Adding RouterOutlet
 
@@ -144,7 +144,7 @@ export class AppModule { }
 
 <!-- preview: https://plnkr.co/edit/3EH52DtjS1Z5fUbycMX9?p=preview -->
 
----
++++
 <!-- .slide: id="routing-final-appearance" -->
 ## Final Appearance
 

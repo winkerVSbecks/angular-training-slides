@@ -4,13 +4,13 @@
 
 # Advanced Routing
 
----
++++
 <!-- .slide: id="routing-advanced-roadmap" -->
 ## Roadmap
 
 FIXME: this module needs to be updated and proof-read
 
----
++++
 <!-- .slide: id="routing-advanced-defining-links-between-routes-1" -->
 Alternatively, you can navigate to a route by calling the `navigate` function on the router with the path array as the argument. For example to navigate to component-one, we could use:
 
@@ -19,7 +19,7 @@ var path = ['/component-one'];
 router.navigate(path);
 ```
 
----
++++
 
 ## Defining Links Between Routes (2/2)
 <!-- .slide: id="routing-advanced-defining-links-between-routes-2" -->
@@ -49,7 +49,7 @@ constructor(router: Router){
 ...
 ```
 
----
++++
 <!-- .slide: id="routing-advanced-handling-404" -->
 ## Handling 404
 
@@ -71,7 +71,7 @@ const routes: Routes = [
 
 Note: This does not return a 404 status code.
 
----
++++
 <!-- .slide: id="routing-advanced-route-parameters" -->
 ## Route Parameters (1/2)
 
@@ -92,7 +92,7 @@ export const routes: Routes = [
 </a>
 ```
 
----
++++
 <!-- .slide: id="routing-advanced-route-parameters-2" -->
 ## Route Parameters (2/2)
 
@@ -119,7 +119,7 @@ Notes:
 
 The reason that the `params` property on `ActivatedRoute` is an Observable is that the router may not recreate the component when navigating to that same component. In this case the parameters may change without the component being recreated.
 
----
++++
 <!-- .slide: id="routing-advanced-passing-optional-parameters-1" -->
 ## Passing Optional Parameters (1/2)
 
@@ -137,7 +137,7 @@ Alternatively, we can navigate programmatically using the `Router` service:
   }
 ```
 
----
++++
 
 ## Passing Optional Parameters (2/2)
 <!-- .slide: id="routing-advanced-passing-optional-parameters-2" -->
@@ -162,7 +162,7 @@ nextPage() {
 
 [View Example](http://plnkr.co/edit/Ko6VFRGRmu5jJ9ArwxvC?p=preview)
 
----
++++
 <!-- .slide: id="routing-advanced-lazy-loading-1" -->
 ## Lazy Loading (1/3)
 
@@ -183,7 +183,7 @@ const routes: Routes = [
 ];
 ```
 
----
++++
 <!-- .slide: id="routing-advanced-lazy-loading-2" -->
 ## Lazy Loading (2/3)
 
@@ -214,7 +214,7 @@ we will see that both components are cached now.
 
 [View Example](https://plnkr.co/edit/vpCqRHDAj7V6mlN1AknN?p=preview)
 
----
++++
 <!-- .slide: id="routing-advanced-route-authorization-1" -->
 ## Route Authorization (1/3)
 
@@ -234,7 +234,7 @@ const routes: Routes = [
 ];
 ```
 
----
++++
 <!-- .slide: id="routing-advanced-route-authorization-2" -->
 ## Route Authorization (2/3)
 
@@ -254,7 +254,7 @@ export class LoginRouteGuard implements CanActivate {
 }
 ```
 
----
++++
 <!-- .slide: id="routing-advanced-route-authorization-3" -->
 ## Route Authorization (3/3)
 
@@ -270,7 +270,7 @@ canDeactivate(component: AccountPage) {
 }
 ```
 
----
++++
 <!-- .slide: id="routing-advanced-child-routes-1" -->
 ## Child Routes (1/4)
 
@@ -296,7 +296,7 @@ localhost:3000/product-details/3/specs
 
 `overview` and `specs` are child routes of product-details/:id.
 
----
++++
 
 ## Child Routes (2/4)
 <!-- .slide: id="routing-advanced-child-routes-2" -->
@@ -319,7 +319,7 @@ export const routes: Routes = [
 The parent product-details template will contain a `<router-outlet></router-outlet>`
 to display the contents of the child.
 
----
++++
 <!-- .slide: id="routing-advanced-child-routes-3" -->
 ## Child Routes (3/4)
 
@@ -345,7 +345,7 @@ to
 
 This way we can get rid of the first empty item, which essentially just redirects the user to the `overview` route.
 
----
++++
 <!-- .slide: id="routing-advanced-child-routes-4" -->
 ## Child Routes (4/4)
 

@@ -4,13 +4,13 @@
 
 # Generating Forms Dynamically
 
----
++++
 
 ## Roadmap
 
 FIXME: this module needs to be filled in and proof-read
 
----
++++
 <!-- .slide: id="generating-forms-dynamically-1" -->
 ## How to Generate Forms Dynamically (1/6)
 
@@ -42,7 +42,7 @@ With reactive forms, since the forms are created and handled primarily through c
 }
 ```
 
----
++++
 <!-- .slide: id="generating-forms-dynamically-2" -->
 ## How to Generate Forms Dynamically (2/6)
 
@@ -54,7 +54,7 @@ In our definition, our schema has a `fields` property that defines what our form
   - `placeholder` - the sample value for the control if it's empty
   - `validators` - how we determine whether or not that form control is valid
 
----
++++
 <!-- .slide: id="generating-forms-dynamically-3" -->
 ## How to Generate Forms Dynamically (3/6)
 
@@ -76,7 +76,7 @@ export class FormSchemaService {
 ```
 [View Example](https://plnkr.co/edit/FjmwlCYFkvEqYqAAiJRD?p=preview)
 
----
++++
 <!-- .slide: id="generating-forms-dynamically-4" -->
 ## How to Generate Forms Dynamically (4/6)
 
@@ -103,7 +103,7 @@ export class DynamicFormService {
 ```
 [View Example](https://plnkr.co/edit/FjmwlCYFkvEqYqAAiJRD?p=preview)
 
----
++++
 <!-- .slide: id="generating-forms-dynamically-5" -->
 ## How to Generate Forms Dynamically (5/6)
 
@@ -132,7 +132,7 @@ After generating a `FormGroup` object, we can start using the reactive form with
 ```
 [View Example](https://plnkr.co/edit/FjmwlCYFkvEqYqAAiJRD?p=preview)
 
----
++++
 <!-- .slide: id="generating-forms-dynamically-6" -->
 ## How to Generate Forms Dynamically (6/6)
 

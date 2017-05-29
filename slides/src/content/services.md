@@ -5,7 +5,7 @@
 
 # Services
 
----
++++
 <!-- .slide: id="services-roadmap" -->
 ## Roadmap
 
@@ -14,7 +14,7 @@
 1. How do we use services?
 1. Why do we use services?
 
----
++++
 <!-- .slide: id="services-what-is-a-service" -->
 ## What is a Service?
 
@@ -23,7 +23,7 @@
   - Database connection, HTTP, etc.
 - Does not produce a view itself
 
----
++++
 <!-- .slide: id="services-creating-a-service" -->
 ## Creating a Service
 
@@ -39,7 +39,7 @@
 │   │   └── to-do.service.ts
 ```
 
----
++++
 <!-- .slide: id="services-whats-in-a-service" -->
 ## What's in a Service?
 
@@ -57,7 +57,7 @@ export class ToDoService {
 }
 ```
 
----
++++
 <!-- .slide: id="services-registering-a-service-1" -->
 ## Registering a Service
 
@@ -70,7 +70,7 @@ Notes:
   - Note: must have `./` at the start of the path
   - And must *not* include the `.ts` suffix
 
----
++++
 <!-- .slide: id="services-registering-a-service-2" -->
 ## Registering a Service
 
@@ -97,7 +97,7 @@ import { ToDoService } from './to-do.service';
 })
 ```
 
----
++++
 <!-- .slide: id="services-getting-access-to-a-service" -->
 ## Getting Access to a Service
 
@@ -124,7 +124,7 @@ export class ToDoListComponent implements OnInit {
 }
 ```
 
----
++++
 <!-- .slide: id="services-a-plan-for-refactoring" -->
 ## A Plan for Refactoring
 
@@ -139,7 +139,7 @@ export class ToDoListComponent implements OnInit {
 
 FIXME: data flow diagram
 
----
++++
 <!-- .slide: id="services-fill-in-the-service" -->
 ## Fill In the Service
 
@@ -167,7 +167,7 @@ export class ToDoService {
 }
 ```
 
----
++++
 <!-- .slide: id="services-what-is-a-behaviorsubject" -->
 ## Interlude: What's a Behavior Subject?
 
@@ -180,7 +180,7 @@ export class ToDoService {
 - But `BehaviorSubject` doesn't actually store state
 - So use a plain old list of strings called `items` to do that
 
----
++++
 <!-- .slide: id="services-refactor-the-display" -->
 ## Refactor the Display
 
@@ -203,7 +203,7 @@ export class ToDoListComponent implements OnInit {
 - Use `Array.slice` to copy the list of changes each time it arrives
   - Otherwise this component would be sharing state with the service
 
----
++++
 <!-- .slide: id="services-interlude-object-lifecycles" -->
 ## Interlude: Object Lifecycles
 
@@ -215,7 +215,7 @@ export class ToDoListComponent implements OnInit {
 
 ![Angular Object Lifecycle](content/images/hooks-in-sequence-resized.png)
 
----
++++
 <!-- .slide: id="services-refactor-the-app" -->
 ## Refactor the App
 
@@ -233,7 +233,7 @@ export class AppComponent {
 }
 ```
 
----
++++
 <!-- .slide: id="services-what-reactive-really-means" -->
 ## What Reactive Really Means
 
@@ -248,7 +248,7 @@ export class AppComponent {
 - More importantly, components are now testable in isolation
   - Inject something else into `ToDoListComponent` to test its behavior
 
----
++++
 <!-- .slide: id="services-quiz-1" -->
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 
@@ -301,7 +301,7 @@ a typed constructor parameter (or `@Inject` token).
 injected into a class constructor based on its type, they may expect
 this type reflection to also apply to class members.
 
----
++++
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 <!-- .slide: id="services-quiz-2" -->
 ## Quiz
@@ -350,7 +350,7 @@ implicitly assign constructor arguments to the class instance.
 4: If you do not specify `private` or `public`, you are still able to
 manually assign a provider instance to a class property.
 
----
++++
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 <!-- .slide: id="services-quiz-3" -->
 ## Quiz
@@ -378,7 +378,7 @@ Correct answer is 3.
 registered inside of a `providers` array. Angular's DI does not
 implicitly construct classes on request.
 
----
++++
 <!-- .slide: data-background="../content/images/question-slide.jpg" -->
 <!-- .slide: id="services-quiz-4" -->
 ## Quiz
